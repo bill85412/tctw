@@ -1,0 +1,627 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>真航線 True Course — 航空新聞・飛行知識・機型解析</title>
+<link rel="icon" type="image/png" href="data:image/png;base64,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">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Noto+Sans+TC:wght@400;500;700;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+
+  :root{
+    --bg:#0A1626;
+    --bg-2:#0C1B30;
+    --surface:#11243D;
+    --surface-2:#16304F;
+    --line:rgba(122,163,214,.14);
+    --line-strong:rgba(122,163,214,.30);
+    --text:#E9EFF6;
+    --dim:#93A6C0;
+    --faint:#61748F;
+    --gold:#C9A15E;       /* 品牌金 — 取自 logo 箭頭・招牌色 */
+    --gold-bright:#E0BB76; /* 高亮 / 光暈 */
+    --cyan:#48C9E6;       /* PFD 天空 / 技術資料 */
+    --ground:#7B5A3A;     /* PFD 地面 */
+    --green:#5FD69A;      /* 正常 / 準點 */
+    --font-zh:'Noto Sans TC',sans-serif;
+    --font-dsp:'Space Grotesk','Noto Sans TC',sans-serif;
+    --font-mono:'IBM Plex Mono',ui-monospace,monospace;
+    --wrap:1180px;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0;background:var(--bg);color:var(--text);
+    font-family:var(--font-zh);line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+    background-image:
+      radial-gradient(1200px 600px at 80% -10%, rgba(72,201,230,.10), transparent 60%),
+      radial-gradient(900px 500px at 0% 0%, rgba(201,161,94,.08), transparent 55%);
+  }
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:var(--wrap);margin:0 auto;padding:0 24px}
+  .mono{font-family:var(--font-mono)}
+
+  /* ── 座艙資料條 ─────────────────────────── */
+  .strip{
+    border-bottom:1px solid var(--line);
+    background:linear-gradient(var(--bg-2),var(--bg));
+    font-family:var(--font-mono);font-size:12px;letter-spacing:.04em;
+  }
+  .strip .wrap{display:flex;align-items:center;gap:16px;height:34px;color:var(--dim)}
+  .strip .live{display:flex;align-items:center;gap:7px;color:var(--green);flex:none}
+  .strip .metar{flex:1;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;color:var(--dim)}
+  .dot{width:7px;height:7px;border-radius:50%;background:var(--green);box-shadow:0 0 8px var(--green)}
+  @keyframes blink{50%{opacity:.25}}
+  .strip .live .dot{animation:blink 1.6s steps(1,end) infinite}
+  .strip .spacer{flex:1}
+  .strip .zulu{color:var(--gold)}
+
+  /* ── 導覽列 ─────────────────────────────── */
+  header.nav{position:sticky;top:0;z-index:40;
+    background:rgba(10,22,38,.82);backdrop-filter:blur(12px);
+    border-bottom:1px solid var(--line)}
+  .nav .wrap{display:flex;align-items:center;gap:28px;height:66px}
+  .brand{display:flex;align-items:center;gap:12px;font-family:var(--font-dsp);font-weight:700}
+  .brand svg{width:40px;height:auto;flex:none}
+  .brand img{height:36px;width:auto;flex:none;display:block}
+  .brand .zh{font-size:19px;letter-spacing:.06em}
+  .brand .en{font-size:10.5px;letter-spacing:.30em;color:var(--dim);font-weight:500;margin-top:3px}
+  .brand .lock{display:flex;flex-direction:column;line-height:1.05}
+  nav.links{display:flex;gap:4px;margin-left:8px}
+  .navitem{position:relative}
+  .navlink{display:flex;align-items:center;gap:6px;font-family:inherit;font-size:14.5px;
+    color:var(--dim);background:none;border:0;cursor:pointer;padding:8px 11px;border-radius:8px;
+    line-height:1;transition:color .2s,background .2s}
+  .navlink:hover,.navlink:focus-visible,.navitem:hover>.navlink,.navitem.open>.navlink{color:var(--text)}
+  .navlink .caret{font-size:10px;color:var(--gold);transition:transform .2s}
+  .navitem:hover .caret,.navitem.open .caret{transform:rotate(180deg)}
+  .dropdown{position:absolute;top:calc(100% + 8px);left:0;min-width:184px;
+    background:var(--surface);border:1px solid var(--line-strong);border-radius:12px;padding:8px;
+    box-shadow:0 20px 44px rgba(0,0,0,.45);display:flex;flex-direction:column;gap:2px;z-index:50;
+    opacity:0;visibility:hidden;transform:translateY(6px);
+    transition:opacity .18s ease,transform .18s ease,visibility .18s}
+  .dropdown::before{content:"";position:absolute;top:-8px;left:0;right:0;height:8px}
+  .navitem:hover>.dropdown,.navitem:focus-within>.dropdown,.navitem.open>.dropdown{
+    opacity:1;visibility:visible;transform:none}
+  .dropdown a{font-size:14px;color:var(--dim);padding:9px 12px;border-radius:8px;white-space:nowrap;
+    border-left:2px solid transparent;transition:color .15s,background .15s,border-color .15s}
+  .dropdown a:hover,.dropdown a:focus-visible{color:var(--text);background:var(--surface-2);border-left-color:var(--gold)}
+  .nav .spacer{flex:1}
+  .searchbtn{display:flex;align-items:center;gap:9px;border:1px solid var(--line-strong);
+    background:var(--surface);color:var(--dim);border-radius:8px;padding:8px 13px;
+    font-family:var(--font-mono);font-size:12.5px;cursor:pointer;transition:.2s}
+  .searchbtn:hover{border-color:var(--cyan);color:var(--text)}
+  .menutoggle{display:none}
+
+  /* ── 首頁焦點文章 ── */
+  .topstories{padding:34px 0 6px}
+  .ts-grid{display:grid;grid-template-columns:1.7fr 1fr;gap:26px;align-items:start}
+  .ts-feat{display:flex;flex-direction:column;background:var(--surface);border:1px solid var(--line);
+    border-radius:14px;overflow:hidden;transition:.22s}
+  .ts-feat:hover{border-color:var(--line-strong);box-shadow:0 20px 44px rgba(0,0,0,.35)}
+  .thumb{position:relative;display:block;background:linear-gradient(135deg,#13273f,#0b1a2e);border-bottom:1px solid var(--line)}
+  .thumb::after{content:"";position:absolute;inset:0;pointer-events:none;background:
+    radial-gradient(120% 120% at 100% 0,rgba(201,161,94,.16),transparent 55%),
+    radial-gradient(90% 90% at 0% 100%,rgba(72,201,230,.13),transparent 55%)}
+  .thumb-lg{aspect-ratio:16/8}
+  .thumb .tag{position:absolute;top:12px;left:12px;z-index:2}
+  .ts-body{padding:20px 22px 22px;display:flex;flex-direction:column;gap:10px}
+  .kicker{font-family:var(--font-mono);font-size:11px;letter-spacing:.18em;color:var(--gold)}
+  .ts-body h2{margin:0;font-size:25px;line-height:1.32;font-weight:900}
+  .ts-body h2 a:hover{color:var(--gold)}
+  .ts-body p{margin:0;color:var(--dim);font-size:15px;line-height:1.7}
+  .ts-meta{font-family:var(--font-mono);font-size:11.5px;color:var(--faint);margin-top:2px}
+  .ts-side{display:flex;flex-direction:column;background:var(--surface);border:1px solid var(--line);border-radius:14px;overflow:hidden}
+  .ts-side-head{font-family:var(--font-mono);font-size:11px;letter-spacing:.16em;color:var(--faint);
+    padding:14px 16px;border-bottom:1px solid var(--line);text-transform:uppercase}
+  .ts-item{display:flex;flex-direction:column;gap:6px;padding:15px 16px;border-bottom:1px solid var(--line);transition:.15s}
+  .ts-item:last-child{border-bottom:0}
+  .ts-item:hover{background:var(--bg-2)}
+  .ts-item .m{font-family:var(--font-mono);font-size:10.5px;letter-spacing:.08em;color:var(--cyan)}
+  .ts-item h3{margin:0;font-size:15.5px;line-height:1.5;font-weight:700}
+  .ts-item:hover h3{color:var(--gold)}
+  @media(max-width:820px){.ts-grid{grid-template-columns:1fr}}
+  /* ── 站內搜尋 ── */
+  .searchModal{position:fixed;inset:0;z-index:100;display:flex;justify-content:center;align-items:flex-start;
+    padding:12vh 20px 20px;background:rgba(6,12,22,.72);backdrop-filter:blur(6px)}
+  .searchModal[hidden]{display:none}
+  .searchBox{width:100%;max-width:640px;background:var(--bg-2);border:1px solid var(--line-strong);
+    border-radius:16px;box-shadow:0 30px 80px rgba(0,0,0,.55);overflow:hidden}
+  .searchBar{display:flex;align-items:center;gap:12px;padding:15px 18px;border-bottom:1px solid var(--line)}
+  .searchBar .sicon{width:20px;height:20px;flex:none;stroke:var(--gold)}
+  .searchBar input{flex:1;background:none;border:0;outline:none;color:var(--text);font-family:var(--font-zh);font-size:17px}
+  .searchBar input::placeholder{color:var(--faint)}
+  .searchClose{font-family:var(--font-mono);font-size:11px;color:var(--dim);border:1px solid var(--line-strong);
+    background:var(--surface);border-radius:6px;padding:5px 9px;cursor:pointer}
+  .searchResults{max-height:52vh;overflow:auto}
+  .sres{display:flex;flex-direction:column;gap:4px;padding:13px 18px;border-bottom:1px solid var(--line);cursor:pointer;transition:.12s}
+  .sres:last-child{border-bottom:0}
+  .sres:hover,.sres.sel{background:var(--surface)}
+  .sres .stag{font-family:var(--font-mono);font-size:10.5px;letter-spacing:.06em;color:var(--cyan)}
+  .sres h4{margin:0;font-size:15.5px;font-weight:700;color:var(--text)}
+  .sres p{margin:0;font-size:13px;color:var(--dim);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .sempty,.searchhint{padding:22px 18px;color:var(--faint);font-size:13.5px;text-align:center}
+  .searchhint{font-family:var(--font-mono);font-size:12.5px}
+  .searchBox mark{background:rgba(201,161,94,.32);color:inherit;border-radius:2px}
+  @keyframes flashhi{0%,100%{box-shadow:0 0 0 0 rgba(201,161,94,0)}30%{box-shadow:0 0 0 3px rgba(201,161,94,.55)}}
+  .flash{animation:flashhi 1.4s ease}
+
+  /* ── 區塊標題 ───────────────────────────── */
+  .sec{padding:56px 0}
+  .sec-head{display:flex;align-items:flex-end;justify-content:space-between;
+    gap:20px;margin-bottom:30px;border-bottom:1px solid var(--line);padding-bottom:16px}
+  .sec-head .l{display:flex;flex-direction:column;gap:6px}
+  .sec-head .wp{font-family:var(--font-mono);font-size:12px;letter-spacing:.2em;color:var(--cyan)}
+  .sec-head h2{font-family:var(--font-dsp);font-weight:600;font-size:27px;margin:0;letter-spacing:.01em}
+  .sec-head h2 .zh{font-family:var(--font-zh);font-weight:900;margin-right:10px}
+  .more{font-family:var(--font-mono);font-size:12.5px;color:var(--dim);white-space:nowrap;transition:.2s}
+  .more:hover{color:var(--gold)}
+
+  /* 篩選 */
+  .filters{display:flex;gap:9px;flex-wrap:wrap;margin-bottom:26px}
+  .chip{font-family:var(--font-mono);font-size:12px;letter-spacing:.03em;
+    border:1px solid var(--line-strong);background:transparent;color:var(--dim);
+    border-radius:20px;padding:7px 15px;cursor:pointer;transition:.18s}
+  .chip:hover{color:var(--text);border-color:var(--dim)}
+  .chip.on{background:var(--gold);color:#1a1204;border-color:var(--gold);font-weight:600}
+
+  /* 新聞卡片 — 飛行紙條風格 */
+  .news{display:grid;grid-template-columns:repeat(auto-fill,minmax(310px,1fr));gap:18px}
+  .card{background:var(--surface);border:1px solid var(--line);border-radius:12px;
+    overflow:hidden;display:flex;flex-direction:column;transition:.22s;position:relative}
+  .card:hover{transform:translateY(-4px);border-color:var(--line-strong);
+    box-shadow:0 18px 40px rgba(0,0,0,.35)}
+  .card .strip-head{display:flex;align-items:center;gap:10px;padding:11px 15px;
+    border-bottom:1px dashed var(--line);font-family:var(--font-mono);font-size:11px;
+    letter-spacing:.05em;color:var(--faint)}
+  .tag{font-family:var(--font-mono);font-size:10.5px;letter-spacing:.09em;font-weight:600;
+    padding:3px 8px;border-radius:5px;background:rgba(72,201,230,.14);color:var(--cyan)}
+  .tag.saf{background:rgba(201,161,94,.16);color:var(--gold)}
+  .tag.reg{background:rgba(95,214,154,.14);color:var(--green)}
+  .card .body{padding:15px 16px 18px;display:flex;flex-direction:column;gap:9px;flex:1}
+  .card h3{margin:0;font-size:17.5px;font-weight:700;line-height:1.42}
+  .card:hover h3{color:var(--gold)}
+  .card p{margin:0;font-size:14px;color:var(--dim);line-height:1.6}
+  .card .foot{margin-top:auto;padding-top:8px;font-family:var(--font-mono);font-size:11.5px;
+    color:var(--faint);display:flex;justify-content:space-between}
+
+  /* ── 航空知識 ───────────────────────────── */
+  .know{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+  .krow{display:flex;gap:18px;background:linear-gradient(180deg,var(--surface),var(--bg-2));
+    border:1px solid var(--line);border-radius:12px;padding:22px;transition:.22s;align-items:flex-start}
+  .krow:hover{border-color:var(--cyan);transform:translateY(-3px)}
+  .kicon{width:46px;height:46px;flex:none;border-radius:10px;display:grid;place-items:center;
+    background:rgba(72,201,230,.1);border:1px solid var(--line-strong)}
+  .kicon svg{width:24px;height:24px;stroke:var(--cyan)}
+  .kbody h3{margin:0 0 4px;font-size:18px;font-weight:700}
+  .kbody .cat{font-family:var(--font-mono);font-size:11px;letter-spacing:.14em;color:var(--gold);margin-bottom:8px}
+  .kbody p{margin:0;font-size:14px;color:var(--dim)}
+
+  /* NOTAM 小知識框 */
+  .notam{margin-top:26px;border:1px solid var(--line-strong);border-radius:12px;overflow:hidden;
+    background:repeating-linear-gradient(-45deg,transparent,transparent 14px,rgba(201,161,94,.05) 14px,rgba(201,161,94,.05) 28px)}
+  .notam .hd{display:flex;align-items:center;gap:11px;padding:12px 18px;
+    background:rgba(201,161,94,.1);border-bottom:1px solid var(--line-strong);
+    font-family:var(--font-mono);font-size:12px;letter-spacing:.14em;color:var(--gold)}
+  .notam .ct{padding:18px 20px;display:flex;gap:16px;align-items:baseline;flex-wrap:wrap}
+  .notam .ct b{color:var(--text)}
+  .notam .ct span{color:var(--dim);font-size:14.5px;flex:1;min-width:240px}
+
+  /* ── 頁尾 ───────────────────────────────── */
+  footer{border-top:1px solid var(--line);margin-top:40px;padding:52px 0 30px;
+    background:linear-gradient(var(--bg),var(--bg-2))}
+  .fgrid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:30px;margin-bottom:38px}
+  .fcol h4{font-family:var(--font-mono);font-size:12px;letter-spacing:.16em;color:var(--faint);
+    margin:0 0 16px;text-transform:uppercase}
+  .fcol a{display:block;color:var(--dim);font-size:14px;padding:5px 0;transition:.18s}
+  .fcol a:hover{color:var(--gold)}
+  .fcol.about p{color:var(--dim);font-size:14px;max-width:34ch;margin:12px 0 0}
+  .fbot{display:flex;justify-content:space-between;align-items:center;gap:16px;
+    border-top:1px solid var(--line);padding-top:20px;
+    font-family:var(--font-mono);font-size:11.5px;color:var(--faint);letter-spacing:.04em}
+
+  /* ── 廣告版位 ───────────────────────────── */
+  .ad{max-width:var(--wrap);margin:8px auto;padding:0 24px}
+  .ad .label{font-family:var(--font-mono);font-size:10.5px;letter-spacing:.22em;
+    color:var(--faint);text-transform:uppercase;margin-bottom:9px;
+    display:flex;align-items:center;justify-content:center;gap:9px}
+  .ad .label::before,.ad .label::after{content:"";width:26px;height:1px;background:var(--line)}
+  .ad .slot{margin:0 auto;display:flex;align-items:center;justify-content:center;
+    width:100%;max-width:728px;min-height:90px;
+    border:1px dashed var(--line-strong);border-radius:12px;
+    background:rgba(122,163,214,.04);color:var(--faint);
+    font-family:var(--font-mono);font-size:12px;letter-spacing:.05em;
+    text-align:center;overflow:hidden}
+  .ad .slot img,.ad .slot ins,.ad .slot iframe{max-width:100%;display:block}
+  .ad.foot{margin:32px auto 0}
+  @media(max-width:760px){
+    .ad .slot{max-width:336px;min-height:250px}
+  }
+  .reveal{opacity:0;transform:translateY(16px)}
+  .reveal.in{opacity:1;transform:none;transition:opacity .6s ease,transform .6s ease}
+
+  /* ── RWD ────────────────────────────────── */
+  @media(max-width:900px){
+    .know{grid-template-columns:1fr}
+    .fgrid{grid-template-columns:1fr 1fr}
+    .searchbtn{padding:9px;gap:0}
+    .searchbtn .sbtxt{display:none}
+    nav.links{display:none}
+    header.nav.open nav.links{display:flex;flex-direction:column;gap:2px;margin:0;z-index:45;
+      position:absolute;top:66px;left:0;right:0;background:var(--bg-2);
+      border-bottom:1px solid var(--line-strong);padding:10px 16px 16px}
+    header.nav.open .navitem{width:100%}
+    header.nav.open .navlink{width:100%;justify-content:space-between;padding:13px 8px;font-size:15px}
+    header.nav.open .navlink:hover{background:var(--surface)}
+    header.nav.open .dropdown{position:static;display:none;opacity:1;visibility:visible;transform:none;
+      box-shadow:none;border:0;background:transparent;min-width:0;padding:2px 0 8px 14px}
+    header.nav.open .navitem.open>.dropdown{display:flex}
+    header.nav.open .dropdown::before{display:none}
+    .menutoggle{display:flex;margin-left:auto;background:var(--surface);
+      border:1px solid var(--line-strong);color:var(--text);border-radius:8px;
+      padding:9px 11px;cursor:pointer}
+  }
+  @media(max-width:560px){
+    .fgrid{grid-template-columns:1fr}
+    .fbot{flex-direction:column;align-items:flex-start;gap:8px}
+    .sec-head{flex-direction:column;align-items:flex-start}
+  }
+  @media (prefers-reduced-motion:reduce){
+    *{animation:none!important;scroll-behavior:auto!important;transition:none!important}
+    .reveal{opacity:1;transform:none}
+  }
+
+  /* ── 多頁面 / 文章版型 ── */
+  .page{max-width:820px;margin:0 auto;padding:44px 24px 64px}
+  .crumb{font-family:var(--font-mono);font-size:12px;color:var(--faint);margin-bottom:20px;display:flex;gap:8px;flex-wrap:wrap}
+  .crumb a{color:var(--dim)} .crumb a:hover{color:var(--gold)}
+  .page .kicker{margin-bottom:12px}
+  .page h1{font-family:var(--font-dsp);font-size:clamp(26px,4vw,38px);line-height:1.25;font-weight:900;margin:0 0 14px}
+  .page .lede{color:var(--dim);font-size:16px;line-height:1.75;margin:0 0 26px;max-width:60ch}
+  .article-meta{font-family:var(--font-mono);font-size:12px;color:var(--faint);margin:0 0 26px;padding-bottom:20px;border-bottom:1px solid var(--line)}
+  .page-thumb{aspect-ratio:16/7;border-radius:14px;background:linear-gradient(135deg,#13273f,#0b1a2e);border:1px solid var(--line);position:relative;overflow:hidden;margin:0 0 26px}
+  .page-thumb::after{content:"";position:absolute;inset:0;background:radial-gradient(120% 120% at 100% 0,rgba(201,161,94,.16),transparent 55%),radial-gradient(90% 90% at 0% 100%,rgba(72,201,230,.13),transparent 55%)}
+  .placeholder{border:1px dashed var(--line-strong);border-radius:14px;padding:40px 26px;text-align:center;background:rgba(122,163,214,.04)}
+  .placeholder .big{font-size:17px;color:var(--text);margin-bottom:8px}
+  .placeholder p{margin:6px 0 0;font-size:14px;color:var(--dim)}
+  .backhome{display:inline-flex;margin-top:26px;font-family:var(--font-mono);font-size:13px;color:var(--gold)}
+  .cardlink{position:absolute;inset:0;z-index:2}
+  .card .strip-head,.card .body{position:relative;z-index:1}
+
+</style>
+</head>
+<body>
+
+<div class="strip">
+  <div class="wrap">
+    <span class="live"><span class="dot"></span>LIVE</span>
+    <span class="metar" id="metar" title="RCTP METAR">RCTP METAR · 載入中…</span>
+    <span class="zulu" id="zulu">--:--:--Z</span>
+  </div>
+</div>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="#" aria-label="真航線 True Course 首頁">
+      <img class="logo" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJEAAAB4CAYAAADykxBpAAAxZUlEQVR42u19eZxcVZX/Offet9SrrZfsYCDIBCRBgQRQll+6x0EBFxDsDqvC6CTghgyLoGJ1KaCMRnADAyo6jojVCqIYcdSpjigoJhAwAUQhbFl7qf2t997z+6OqoIGk093pbNrn82maVNfbv+971nsOwKRMyqRMyqRMyj4jRISUybBXfy4mb82k7EgymQzrgD6GiBIAaPKOTMoYmCfDcrku3vz3Y/de1brqjiXHNv6Jzc/Z5K2alFcCB5ByXZwIEDGru7t71Zp7PjVn9Y8+3MOD4l9J43EAAPlM5iVw4eRtm5SmvdPX08E7sytl87O/3HPN8SoYvEhF3mkpRySLVTloHH7WAUcc8XaXCACxrtombaJ/dvBkMgzmPY6IqABA5vPr7SnVW09XXnlJVHux0zY5lMKIIotrYPaNRxzx9lo+s0ggvgy2SRD9cwrmcl2sa10vYTarAQAe/+WXZyp347nR5us+wA12KOgI/FBSGEkpBOM1V1Wt9JxvEQD2QIcGWAkTrs6IiPf1AQL0veovHfDaz7YnHdv4rG8bn/eNYpvhf+vbznf7trP9eKVvhHOCcRz7ld/p6ABqMMbEqaz7lr1JVZ5ZoqPwrJgJbX4YQRAqhYAACByIZCphiWpo3nr0OTcvzeW6eHd3r5pwF5+IcGcublJ2r8oiIrb2Z1efqoLKReHg4yc7FvKaCqFcJUkIDBH5yzSD3A1UaFnyRgJA6DrsNS4+ThCAaNOge5ZtmU4YRaRBDdsvJwYAzc84cFBQx1v9/wFYI/ag1atwyJvnyIkBkFb1fTDOQYNCBpxes03z7/XvUnMfze8yzkmDAga8cU4coH4+xOCl7bYpjPP6eYICUIAvbzr8XF+65uZ3kQEnAAVaATaOj41jAfD6cRvXj686FmpQQAq07dgQBL6Y0RL/PiKGo3k2uVwXr6ss0AAATz94x/Tq5ofP1pH3PgHhkUgKan4EACiJgCO+Bg8y6Rii4rO7jj3/tjO3xUI7zUT5fF4gotw0UL1wRlvsO54CsB0+6fJNrMsNRAAxDrA1wOsAQBERQ0S9PRe9r2cR78yulM0H/tTvbjnM3fL4kuL6/HmOCe2BjKAWSg3ACBEZAAjEbe6MRQrAsmI3jkQ4uBMMxACANhf9Ay3BHiWEWBRKQsR9AEO0kyRMsGujI/X9k9bAOFdO3LbK5epls9qTX85kMizbMIZHFg6P/eKTJ1FtcKmU8l2OSWbNC0BKUsAAEZDt4BRUzObM1+afjj77m8f19PTg9o67M0yEiKg3DdVuizl2slh0FWO4j3h7uIe33/H+iYiQMZ1K2Vax5F0+qz35ZSISjdTDNhkIgOCxX96wH4+K54de8QI76p+rWAReGEApxADq9g4bzZtARCC4QA7iS4hI+cwingXYJojGFbHO1y9GbRyoXNrW6ry1VHIlY8OMsUnZWTuTGEOdTsd4oeBdNaPVWTYSgAAAenoyCIAgQzmDQzAFiP5arkaP1AIYtCwLUgnbSsctI+4IbpucISIS0LZVIpC2LcHKbvR0MjX3XiLA4R7dTr9STX28eahyuGmaq7QmLqVi+4Ya21cAxGQiYRvFUu2KWe2JL+0IQNsnNA7r/+8rM6Qszwnc8twoCuaT9OdrGU7XWh5iCnT8UNOrDWoikumEJWqhefnCc25els8sEhMGIiLCBnthf9l/0IlZC6tVT73CJZyUnQWRnNLqiMGin53eGusZK4AymQzr6ADW3/84bcuTAgB4/LdfOtsbfH4J0/5MUsG/hBFhE0hEQIIjaGIFabf8y1u6byzAsBTHRIBIIKLc2F+5buqUxCcHC65ExMmo98RJ1NISM4oF77bpbc6SPJHoAFCISOMDZIZBXx/DzjqLPPbLa9/BlXu5DIMt2mi9TAe1cxNs8IZi2ZeADfu4EVws+/CVY8/71scp18VxO2Acs2FNRBwR5ZYh9wTLFlcXSr56KToyKTstWms5pS1uFEpe7/Q2Z0mOiI8XQJlMhvXMexwRswoA9Nq7rjwGyM1QbeMMiebn33TmTT8GAFh99zVPhBIAgLDBJwQI3A0hMtKzvwEACOsO2+Hx2SgBhL3133Em4NuMMVRK4aQdNEEAUlq1tsZFsezf75cH3k9EfF1PD40VQESE+cwikc1mNXb3qnW//Pq8J3521V1A1bsI8YEndMcxbzrzph+vWr7EICKMtR/8Vz+gZtiUiEAnHBOlZvcc9a7M33K5LoajCCeMion6AHh3Pai4rL09Pneo4ErG2KQamxgG0vFEjLtu9LQb6rMOmD3bI6JRxoJeGWBs2E7yobs/9bqYKmWp9sR5EuDuIc88etH5N20C+Brkcl18YfdyCUuRnn+eXqi++OAmA9j+kSJCJIwkgBFP3AhA0DXK47NRoJt3IsqNg9VTkilnabHkT9pBE2dEa9M0UCpV9H3/3QdMjW9smA2jAhABYL0sA6gzu1I+mf/ZlMd+esUX7WjretLymIjstx3+3m8sXnT+TZvymUUCAKBubCNRBtjs2eghE2tNgwMRyJgl0Je46sjTlz2YyQDbkS00KhA1vDF6rlhsNYS4NYokaa0mqyEnyJXnnBFjCH7NP33WlNTjDcdlVA+OcjmOUAfP2nwu8fAPL7oq2HLvi9ovflSReckbu5fPP7JrWV+9SpFeE+fp66gX3DMjvkaIujYTwkBuxb+GiNQBi0b9nEf8Ym9vL0NEbUrx1VTK2j8IIoXI9loQTYSJRkS0m86VUimbe67/oVnTUitH68o3a56xu1utWLHCeuQnly4Nt/z66ZY4fl7p6Ieejh1w5OJvfIOAMNfwrEayrZgw1imNIDiaFTd6Dg86/8eN4OKoqzLEDrwx1V90z02mYucVCh5xzvdSNVZP2GutJCKK8cKAiMg0TVRq11a1aK0hmYyxoSH3+llTU98cDYByuS6+bl0vdXf3KiLia+6+4mwq5D49rT1xyNYi/qXgOl0LzrnldwAA+cwigdmVEkZQRx199RQGN1KPuZVNMhEzhBvZty1YuNCtq76VcqdBBI08CSF7yEKYT6RASrUXemMmIIbMNExSCu60bfMwzwv0sBzRaB+sam2N82LR/QKR/gFDk2sKdxmaSqUQZrbH1zZMhu0ehzIZ1jvvcWwGDlf98KJ3Pvqji6+ZmhbH9Afc3VyGj/5s8fKbs4iacl0cunJ6VMHJnixBFqD9Tef+fUNfz1DNlymnfeZ3AAD7XlW5OJpX+B9CNhdq70nE7Z/UaoEea/yKiLRtmxhG8nm/1P+G2bNne7uVQkeK9TTB0/uREwWpqxxDngrEoCaN74nUgdccfvLlLzSZqnuUhvBwrw4R6aE7lj6hpL/2Le/7btd49iNGcYNxLwYbAgCWAJJB0fu6VISNIrkxazLLEsx1w8tn111sYyR2mEC7SG/rftdLWLMyCwBrfnLZfFLuJzGqnd2WjsFQlT+qhXPFUd1f/nVTdQ2vHRqL9PUs4gArJTPivzfQ6CUA7B3nQ9iXPRyOiGpjf+36KVOcq4fGkYYhIpVMOrxSdvtmtMc7m/vcE9czPNH52L2Zg2R5wydIy/OmtNjOYCmocDP9hdTCS748Z84cv24jHUZjiSdtC7CISM8/8vP9yobXP39+dwj/TCBqFsUVi/6BZLC/aE0xKccTRUdlWYJ5bvjmmVPiD+0JEA1XIWvvu60tKv75Eq3kh9Nx0R4pAC/Cn0mWuvKY7i/+dbyqa1erg32bhQaqP2pri3cXCjXFGBuTLaS1Vm1tcT405H5/Znv8fbsbQEQZ1tOThWwWdC6X44eKBy+WfuXymAkHMERwI/Y02u2fPeL0z/83AEE+nxEdnVmFE7wevslI491e7MsA6i94HVbM6C6V/DEDiIjIMARWq0GVEK9pBlZ3x/lnMhk27+UEKay568ozKPjfTyHRUbZB4AWguJW+me/31swbT3xnIZMBBpCBzs6s3CVMshMA2mdB1NtbL0vZPOQuizEEIj3mQCMRqHTSEgND7k2z2uPP5YlE53gKv8ZyTADsyyzindk6GFbnLn8Lh9pnIRj4N44EiBwiiD0oWqde/cZTMysBbhxmJ2X32uexz6mzfD4vOjs75aaB6gfa2uPfGhpy1VhLc4lIW5aBUaQ2Cm3Pa22FCgDQzr6RIx5zWF3OQz++6iAhi1eRjj7AUTOGAErzqhGfcu28d3/+S4iohsV89vpWLvsUiJrhhmIRUhELHjME2z8IIhp7YJFUa6vDC6XahTNbE9/dlbYQUYYBZAkR6Fe/+mJ8aumZy0BFlxlMp/wgAtuyQDPnPmLTrzjizE+thcYS573JcN6R7GvJVIaI2tfuFa0p63W+H445Mg1AKpGwebHgrbm/ZcX3GzXjalcAnnJdHDGrEZHW5D5+/tTBJx+2MMpGgZ8CADDsxIAyWj/wpq6vnXLEmZ9a28i0074EoH2KiYavczMFrtMElhqXSw8qHrd5tVT7txlTk7+daBZ62e6px3v+8otrjle1/usMlItcPwIgAsu2QYPxP5Q8+JojT7n02VWrlhsAC2DBggW07V2+9Jv2RvW2z4AoR8S76y79nW1t8cXjdelbWuK8UKjeO2tK8l0TDaDh8ZtHV3xhf6o+9xlS4X8w0OD5kUwlLBGR8XdwZl7+pnf23DNeZzCXI97VBdgLQF0Ae9xuwn2EhTgiqi2DpeNsx7k/CCQR0ZjruxFRGwZTWsORbQnz8d7eXtbd3b3TIKo3w8wCZkGvWPGUNav61Y+QCq62BLWXan5kGdxgwgI0kl+rOcf2HHdy9xAAwNq1a83Xz5s3q1T0X48IHEnNJuQ2aE3AGIHWqIGeM0wrNIV4UVuwqQWxsK3703xP9gSg9hkQAYDePFj7XSodP6FScce8TImIZFurIwaGal+f1Z746ESw0PB17wAAj/z4P08H7X3W5vLwctUHIpDphC1CbTzKnP0uPfydn8432Wdr0T3bMMRnpNIHGsK0uUAwjZczss0HE9Y1IHiepwBwiDF8kTH4KzL2ZwJY1RozViNi7VX3ikZbHTkRIvYZFirUzky3xE8ol93xrHPTpmmwciUYZCZdm8k0GpXspOpC7FUAK+WqH199KFel6wyqnCFlBMWaChxbWJoYBBC/QR50xWcXLtzPBQB4dtOmOalk+w12zOiKQgKKAgh8TxMAuACaXsueWF9RzTgXYqohxFTDhCM5wlmup2GgEj4/WAlXMqbvUY71a0QsN23I3t5enAim3aeZaFgFgdha9B6NxcxDXDeg8dQKtbfF+cBQfUVpM9Y0nnNqRpu7u3vVqlU/c9jffnE1gvpPk5NTdsOIAbJ00uQBxf7Erekfm/+uTz/U3Hag5P07M/gXHNuYWiy6qo4RQIBROAcvl1zSsB9uWRbGYhw0AXhu+CJD+CkAfLs1Ya3ZXcyE+wILbRqofLStPfHVoaHaeNIbOhaz0POCv3ulrW888MADw/F6OcOz7A/fdflpTLqft1n4hnItBEUUOJawNHCFIvZ58Yavfm7+/HofoWe3bp2Zdlq+FHOMc2q1CMIwHPN1jPSOEGkCQDBNk8fjAqrVQDFkKyItl01LOSuH38t/KhA1WAiKRUhL9J/ggk8Pw7EHFolIpVIOr1TcM6e3xu8az80kyjDELAEAPfTjqw4ydPl6QcFipRR4oQ4RSLSkYiyQ4hFltH7kqPdc90Bz261Fd7FhimWxmLFfseAqIGDIds16vQZZKUQUyWQMwlABaf0/oVTZ6S2xvzeZfaJZaW8ONjJEpBDcS9Npe0YYRmo8AEomY7xccn/XANCYAotEzSU5WZ0hwofv/NBlIupfbWG4uOaF2gt1GDOZaVsGCyH+X61vvur4JoAeWb++pVgLb0skYneSxv2K9VonvqsA1LSfmvVU5bKrfD+gWNw4zzL46v6y/wlEBETU4/Fs9zkmymSI9fQAvTDozoqZ/HGGmIgiOebAIiIq0+TM9+TxM9qdB8fCQsNjPn9Zcf3RqvrijTaPjq+4AUhFEQNkqaTF/Yj9FY3Eh444c9n/1fseAPUXvE5h8pvjjnHoUKFp+yDbQ4wuOecinbKgVgtXul5w0X5TU0+Ou9PIvsJEPT11p8REvDKVtFJRJPVYAaS1Vqm0zV03/NFYANRcitzd3avWrFkTf/QnH7telZ/5A9fe8aWKL5UiaRnMcGIm9yJ+m2o/6tgjzlz2fwAAvbkcGyi7GWHy3zIuDh0aarDPHgJQ40USSikaGnKlZZuL4o79wItDpXcjoszliNfX4f+DMVEzvdFfLh/Mmf2o1mSNed0/ETHOiXP0mdSHp9P2+tHYAsMz7Y+uuO6t4G76ioXBvFLFByJUAASphMlDxTZoHv/wUV033dMs6NrQXz405ti3JByjY6jgUqPP0F71kmqtlWma3DAFuDU/M6PN+Wzzfv+jFaXV2/gN1jLpNjNWGE/dNIBKpywxMOh+Y9aU+DM7YiEiQujtZtjdqx67/wetestD10L52Q+RjqAYKgmAyDnxRDwGvuI/LkfWxxadddMmytQTwluG3PdZlviqaRnpoYIrAUAwxva6F5QxxsMwJCmlntoay24puO2IeAkRMazHNPd9EOVy9Ye9tVA90jCNxaWir8dReK9Ny2Clkt8PofpiwyPRIwcNUQGAevSea07Tm+5fZnH5+rLva2oQddzmXIFR9VT8E0d133RzkxSf/Eh/fOjy9FdjjnFBrRaCV6qp0Ta6aHhSw39erRmo8UY12XlCurAwxpCI2EDRi9paYh/bMuRqRLx0pI60+xSIurrqN04RXpu0DVFftj3WikWihGPwwUL0uVmzUv35PInOztcakC8tzenulX/69V3tdvkP/8XDLf8eRQGUXS0JGQPS0JKMCV8ZfyBrxtKjTvvMOlq1ysCFC6NNA7Vj7Jj57bgj5jeMZ7aj2E8DOPWVp5xzy7LQMAB4Q+kpXQ9ZIwAI/vJnUgIEQQhSRhoAdcNzZTtD9QBgDBa8YHpr7OObCzUPET853ljSXgOil5Os7vExxzy1XPbGkx/TjmOzQsF7yi85tzXeYDUC+8hHfvqJd7DCr79msmhOqeZrRAZEiKZAZpgxCCH1X4WuL32qE1FSBhguXBhtLfmXmAa/gXFhDQ25EnfQNZeINBGQaRo8Hjc4EUCl7Pmu6z6DgE9ppHUMsUoKnkNGYSOEOIcJI62UegMyOAgIDk4k40lDAPM8DZ7naUSk8bY6JE3KjllW0Y0GCPT/7kyN+d7EREREuGmodi3nDKi+PHPM+7AszoIArpkzB/1ttGnBfGYR7+zulU888UQyeHz59egPfEQrBaVISUTGiUglE5YIFb4QstSHF5y57Oerls81AACevaCQGrosdnM8aZ1dKvmgVKBHUl9EpAGAnLjDTROgWg36q9Xg14h4rwL844zW2LOjNWj7azTLc4MFAce3AcHJqVT84Ho8qEaIqMcCJtKkbMfiRHqwXHJPOWBWy6qdUWe4N7HQpqHqO1NJ5+fVit/s3jWmwGIiEePVqv+n6a2x4+FV+aJG1FkDADxyb7YTva3fsFn4hmLF1/XUVd0CSidjzJPGCsVf/8GFZ/7npqdWfMWae+olwaaB2rF2zLjdcYw3FOrGM9+ejUJ10U7c4YaB4NaChxHYrSEGd89MJre+khVzvKurCwEA+vr6oKOj4xX2UW8vUHf3K1UMEdkFV54Emj5imMbbkAFUK3WVuiO7SWtSMcfiRDTo1cJTZk2N/3lnY0ZiL2IhvqXgfVa/ZG+ODd+IWC/DEXAFIqrhUdlG1FmuWkUGX/+xz2L1hatASyiGjS4iGpRpcs4Yh1pkZBcsvqUHQANRjiN2B/1F72LDFDcxxs3CDtSX1lpzzlk6bXPXlX/xtP58e9L6URPQw86LEF8LkBE9SADW19eHiOgDwM8B4OcD1ehtDPQn0mnnX103gjCMtrtwQWtSjmNxTXqgXHRPPmBWy+qJCDrucSZqZtS3Ft2uZDKWK5XGXuqhNcl02hGlknfXzHbnzCazZRrFYtks6FU/+eRRQhW+YXP55mLFJ0AgBGREJJOOKULNX6RY+78fddrnf900nvPr19tvbJv+9Xgy9oFy2Sel1IixHyKSjuMIpcKAiD73zJODNzZLQPJ5Eh0d4+8Euy1ADWfbwbL3QSb4FyzTaC+VXpuo1lorx4lxTXqgVq2+bf9prY9MVNQa9zD9NEs92OaC+3DCsee7nq8BxqDfiZQQghsGBynV4W0Jcx0AYF9PB6tn3BHW3H3F5RAWP8cosl1fNnsYEQLodNLiXgT31XTLB04454sb16+/3Z4z50J//cbyG1paYt+Nx8QxhaInG8AcaYyBbGl1hOdG6zw3umDW1Piq4ap6V5oC0KhofH5L8eBEwvmmEzPe2ig14YwhKEXKcWyutep3i7WT99uv9eGdKYfZq0DUvJAtBe+CdNq+vVAY2xoyIpLxuCO0lmGl6l26/9TUzUTEobcbsLtX/fEnmf1tNbjc5sGppWo96swYcK1BCY7cMg1QPHXDEe+98SoAgrVrc+b8+d3hxoHyGY4T+7YwREul7MpRzCyRLS0xUa2Fdz3fv/EDR86ZUyQiATAxzDPKe/ESq/SX/OWplLWkVPSU0hqceIxrrfoLlepJB01ve3Qi82Z71CYiIuzpAU1Esf6S95kgkLSNeVsjxltaWx3hutHawJdL9p+aenDVquUGIkYAAGvuvvxMCDZ+3WB6RrESSkDkiMC1JunYQigSQ4EyP7hw8ZfvpnxeYGennD+/Oxwo+xnLMnvCMALP23HwsFl2Wy4HN09J2x8exj5yd95PRJSNkAYg4tL+sv90PBG7QUYSSOuttWp48q4A0B5lomYQcPNg7aK2NueWwVGuZNVaayEESyQt8LzoO8+XBz92xMyZtXz+druz80J/1aoNjnj2i1/kqvqhMIogiqg5ta7eLT5uipCsx5SYcdaCMz7zxPr87faczgv9tc8X22a1xr6VSJjvKRQ9rbXGHaUumgAqlLzbprc4S/ZEffP27CVEVJsHqp9OJa2PbylVT5ozgTbQXgGiYbaQ1V/yHjdN4wDfD3dYcKa1lolkXCgZVcNAfXxaa+zbAABrczlzfnd3uLr38jcyXb3dMfRRxbKnCJAxBKxPmQNqScaYG/If1vZfsPSEEz5YaaqvZ7cWjmpJxO+IxYxDGu672FGMqrn8qFINfjM1Zb0dALCnp2en+gVN9P1FRP30hqHZr9+v7flcLsd3Vb31ngKRQES5ebDyn21tiWWDOyh7bVbstdYN10eDavj+6dMTjzZBAADw6F2X/wcFxS8zUAk3kC8lbYnq9o9hCFA8/qmjur52PQABUV4gdsoN/ZVzEnF7OTKecGveDqPPzSCibZuolX7BrwQLZ85MDsAuqBicwPvNduW5sT3xlvT0gH6uWGxlXHyiWotoJLWhNWlEhNZWR1RrwQ9eXF84Yfr0xKPr87fb8+d3h/ffe3PrI3defIdJ5VujKEzUAqlfBhBJ22LcMMxKBInuo7q+en0u915eN3o7VH/B62hvT/wglCpRq7kaRzn0jzFGiAA1P7xg1qxUf0N9/FMCaI+ACABYNovaJuOSlrQ9LQwjtb3z0FqrWMxitiVUpRpc0p6wzzv88OnVtbmcOafzQv/PuUuPSVQf/aMtorPLFU8qDcQaKpE0yWTcFIDm05K3/OvCs77Su3z5EqNRrUiISJL0EkIgJVU02tofrbVKp23uueF3Xjc1mR9LA/M9IbsD3LtVnTXLXjdvrk4VjvEk4ywdhdE2Sxy01rKlJS58P3pBhup9U1tjfWvX5szD53eHBACr71hyEUN1E5K2/FC+ouaIiGRr0haexHwQP/icY9955eZ8fpHo7FwpX5qeXalMY0o8xRlLSzm62bVEREIIINBlzdSh0+LxLXuzGtttrLA7D9Yse0WDXZ5OWa1RGL2m7LWRd1JT2uLC86P85oHSm6e2xvqa6uu+X/13/OE7L749Zuhboiiy/HC4+gICANWStIQr+X8/hTNPPvadV27O5bp4Z+dLzb3rHekjflI6ZaejKFJjqNNRqaSJUSBvnp5IbO7rA/7PDqDdGidqxDD04KD7OjDZxeVK+Jp+01qT5pxhOm3zYiX4Wv4+69Lu7qkq33DD//j9pYdZhfv/J2bAkaVqIIlerl/WBMQZkWNbvKbiX1iw+CtXEwFSJsOwOztc3dSLvYhOARx9WWiDhXix7Fd4DL/atO1gUnafOnt5IWJteXu7s+TV7YLr9o/NAXQYheqSqS2xbxIRW736Vr5w4dJode9lZwhV/jaCbGmmLoZ7SxwJTduBSCQ/svDMZTdTLsehq1sPHzvZVGVEZG0puE/atn2g7/uj63FEJNMtjigW3O/NaI9fsCdbFf9TMlGThbYUiwcLLt5fKgevqH/RWstUKi4iKTe5Ff+sWdNSv1u7dq2JiCEA6NU/XNpjqGImlBKkJPVKAIGyDM5RmIEfsfceu3jZvZRfJLCzW27npaGthdqhnIsDgmD0S7IJgEWRBuD6f5oLKydl96qzZvH9pxNp0xpefE9Esr0tLqq1cFW54nYfOLN1/fr1eXvOnPl+PpdJtOjN33JMvbhYCbUmQDYMfKRJxWzONYgtOnnI4mNPvWxlPr9IYOe2h5v01W1AjcgXJJMWloquBBxdXMiyLFateRuj1sQfGmw2qcp2l2FdX9sEerASzLdtcW6pVC++bxrQ7a2OqNSCHzzz5MCiA2e2rs/nb7fnzOn0H8hddXCL3txnC7W4UPYlADI2zAAmIhl3TE5oPu/6UcdRp162Mp/PiM7O7U/H6WgyH6iFOLZm0BSzOSCwP85G9HJ1VUaT8NlNTNTVVe+TvGmw+rnW1rgIgpoiAuKcQTIV48VqeO3UpH0NAeDaXMac33mh/1DvZaeIqP+7gtO0UjV6zZKhZg1QoPgaPWXBaceftPT5OoB22Oe5zh6EhzSmUY1WLREyAED1BwCArn+gwTp7PRM1lwD1F2tH27Z5WqnkawAE0zLRNA0qFt2PTk1a1xDlRW+ui83vzoYP5z56saXLK0DLaTVPqm0BKJ2whB+qP/nV+FsXnrT0+boLPzKAGka1bgx/2T+KaCwgYkEIwEE8OtzDm5TdaBMpDdmEbaDvhZETj5kAulirBOfOmpZYQWvXmgDzo+4ugtV3LP1ijAeXV6qe1oDw6grHJoACTN5P5vR3HXfeVaXRzG0fLsUixBGxXdapaFQBRs4581w/pCBYPwmi3Qiipgu8dcg90XbMU0olL0ym4mYko421SviO/acn1tBTT1k4d26Qv/12e7X1wTsTFj+tWPUkAeP4qgdMQFFLwjJqyl4RvOXL7z1uNnqN4vsxudmhATaFZJEevV3MGQelwqplpYcmQbR71RnVg4B0LQCoeCJmhmG0tlx2T9x/emLN+vztNs6dG/zmtrOmp60H8jEDTytUPAmA4jUAIpItCduoReJuev3XTj9uNnqUeXn1xlhiYoLCKZzzhFJqtIPRiHEGCFBqaQFvEjK7iYmaLDRQ9E4SpjjRMDi6brhqsBKcOndWS38zAv2ne74wz/LX/9jA6NByLdrmmnsCilqSllH1qXfBObecBYhEmQzDcdbtyCjiwjBBazVqkwiRASAGvb29chIyu4WJ6ispiYhJ0pl0TGCt5v98cFPlrXNnpfqfWvEVq7PzQv+PP/jgAqP21z5G8tCKux0AaZLpuGXUIuPuBefcthgAqSeTQdzthV8EAMAOOuigyXHuuwNERPXamv5ycMr0Fuf4gbJ/Z3vSPn3u3Cnl5kLANSu++C6bszySnuJ6kdomgIhkSyomPEr8ihbfvBgAoKcng3ugcrA+nZogfeCBC2KTkNk96qxezqzVzYVq+NOp6djZRIRNAD30w4vPwOrTvVHkM6lI4zbqqutxICFqATww6+wbz5yJKDOZnQNQT08PAABExIZASpcx7ozWLiIi0KBjkVE2JiGzi5moufZ9c6H2cSB8qi1pnkFEbF1vjzH31EuCB79z/hkm+bkocEEq2mbikzSphGOJQJtrov7nT5mJWKPMzjNQT09P3dDnYY00hWPpP6WUAs64Y4XWlOFG+qRMMIiafYA2lstTgWDmtNbYu4gA1q3rEfO7s+GD3zv/jFiM90qlUWqCbQFIE2nbYjyU+nndftRpb77kvnIul+MTaQO9Lp2uMoYDXIhRueqIiFprFY/bQnI1FwCgr69v0jbaFSBqtDkh7nne9FbnU4jor159q5g/Pxv+/vbzzoyZojeShFJpQNgGAxFpkyMCdwoeOW9vRqInaoVCPWmaYYgYaqIXDQNhDOkzMgQAICwEAOjo6JhEzq40rKdPn15FRLlq1RJj4cKl0eq7rjwjYYmcVBqU0tssvSACEgxJGJaWIvXe48/9+pP5fEZM9NyvPuhpHvsZwQFo9CDCSAIwghPqqnGyGG2Xx4lWLV9uLFy4NHr0VzeegpW/50KlQGqA7dXuMAQVi1miBm0fOObMG/6vXg898UNzO14+3l/G+rL5fgSEuGDDhvKU/fbDgZ2d4DzJRCNIPrNILFy6NPrDdy44Wg+ty4VemUkF21RhTU8slbBETTlfOKbrhu+sWr7EGKmcYyI8R6XgAdeVADC6HkiIiFEUqnQqluZx8faG/ccn4bMrvLNcF+/MrpTrfnvrPCdm3EcqSkgF260e1JpUKmGJamT+4pizvnZ1Pp8RC5Ys35VRYQ0AELU7fwnC8AXLsnD0xWUIRACk6YIGA02qtAn3zjIZht296vff+vCssH/VPRxVWxjRdkcpEJGOWZwHEfubud9x52cymvX17dqhb42KRD4b0UOAB2M2J8TRgQEReaXik2WIjk2DlXnQiMpPQmiCQERE2ANZeOCBZTEnoe81MHp9zYsUsm1Tft2QZkTIw4Anz37jiecW5s3r2l3RaAQA0IruQwao9ejrpYm0iidMgcAuQ0SadPUnCET16YMdPJtl2nj2bz+yeXhk1VNypA4fCKTijslDsi95c/ey1bvCExtB6seJ6BfFkl80TZO/PEpsR2wEvFQKtGnxc/vL/qGdnZ0yl8vxSRDtrNvcl+Gd2ZXyoR9e/KWUrd9VroUSEUboaVjvzloO+I+OPecb38xndo0ntiOVNnNmciuR/nk8bgBuo03x9rbWWpFtW6aM1FcBAJpNO/dGISKstxzci0HUrGt+KHflhQkjuqxU9aKROuATkLZMztyQXpw269iLKAOsDzr2mIGKHG8NQwUEo28sjoi8XHZVW5tz0sbB2pJGcymxNwIIESmbzerGuNJdax+MR5qjnP58V+YYI9x0vwx9LjWwEbudESgnZnJXmacce87N9w0fB7UnbjIAwOah2p+SyfjCatUddS9oIiLDEJpz9Mul4M2zZybX7k2LGZudQNau3ZJIpXh69uwpG5oj4fcaJspkMqyrq1c//qe72nm4JQc6MCNNOBKA6u68yWsh3XbsOTfft5vtoG1eeyNVcy1jMNY5ahiGETLG4/GkeddTG8tTX932eE9JPk8CEfX69YWWGQekf5loSz34zMahA7p34fmNB0TYAcCQMar+/Vffs4U8wA+1ZCOvJNWWyVktoA3W/vOvpEyGdXT07NG3tvHQ2Yy2+M9KxdofkskYJ6JRnxNjjNVqnnJi5r9MSZr3PPbYc62Nfe7JPpiisxPl314cfF16qvO/ccc6QQjjda3pxG82bHBn7yqgjxlE+cwi3pnNylU/uuSKdIzeUa4GOxwlRURkmQJJi48f2XlpEeY9vrekDBAAgDP2yfGMgWCM8VLJlXbMest+B03v27hx6IB63pCM3bnUOpfL8YYNJLcOuf9vSkvyAcsyjy6VXOm6rjRN4+BYWvx2w9CuARKO7WTrNszqez+7QFSfezCKIpQK+EhqjAhU0jF4JeS/evN5t5481iU+u+Ht5YioNgxUvz+1PX7e4GBNMT7midcymXREFEYvhIE8f1rbrp8A3bR9+vqAdXaizOfz4k1Hv+VKRJZFZMLzgpcaqWqtVSoV52EY/b1Yrp00Z2brsxN5bmz0J1wHylNPrbCo+Nz3gLShFIxoBxEAMQYYKpB2eublAIDQddhelbTs6alHnuNCXlIuBxvtmMnGus4eEUW5XFOA7HWGJX47WAuy69eT3XjrkYj4xDETYa6+P46IurMT5aZi7Zg3HX3c7xJx67owlNz3Az08TscY45VynZHSSee36zcVDpxIRhq9OuvtYt3dvarw8C9vSMTYPC+QcodDXAh00jFZqIxvHvGu7FrKdY11mc8ul2wWNQBgS0vLUCDlv5umgYwxPdalZYwx7vuBDkPJk475mZZp0UP9Zf/0hvGumvEpIuJjdbmHAVEAIHXX96f6S/4hQzX/VpPzB0zTfMvgUE011PJr9o+sDnTLMg9KJ53fbBxyD5goII3q7WiqsVV3feIEIxy8PwxDqWmHZSSaM0QNWBZh7V/uef6wwR4AwGx2b22QWe+fNFjrmdLmZIaKXgQAxjj2AwAgHccRnAMEfvh7zvmtFPJ7W1qw8OpjNp9B37DPO4bTTr0TGw23f05+5+knREpfQASLk0krVix6oLXWo+k72VRtQRD+vVSLTpwzPbF5Z93/UbRVAeztBSAiY9UdF38TmASlie3QCCXSCccSNZ38ylHnf7c/n88I3I2R6XGIzudJzGzHns1D1XltrfH3Dg25ETIcE5Aa90W4rqsBABIJ5wQh4ISaDDcNVMJfcNIrLGGtchx8YbQ2SZGoTXvRPFL0dkR6NyE/PB43oFwOYKjRvnm0jUsZY7xcdmU67RxMRPc+9dRT/zoXsbwz9VE7ZKJMZpHIZlfKh+746NUpy7++WPFH4Y0BCQ4A3B60D/y3Q+a9pbsAQLC3F3E1m4hv3rw5JpyWlcmkvaBQGNVsj5F2qggATNPkTlyAUgBuza8hwl+VgieB9CZg8AwQ87RSyDgnQm2BhoMYspmMwyFawxzLMqfEbAZ+AFCruYRAGhDZeOfCaq1VMhnnQRA84kf69FmtsRd6enrGlQQfeexAJsOgJ0trfpo5QHsb1mkV2qo+Yg53YAvJVMIUlYBfe8y5y6/JZxaJ+sSfvV+a0d4XS6V2h9krnLh5TLHoRoho7OR+CQEUASDngtu2CYYBwPCVk4SbDwWhPg82igDCUEIUhgQIzcF4O5841ySTaUf4XvhcpPS/Tk/b63sAMDuORqYjnkxvI54TuVtuiBnkKAm0IwARATEGvOrrKo+LW4gA92R+bBxBSE1EbP90evDFoc0n12rBn9tbHYOIop3cLwKiQESulKRazdWlkiuHCq4sFFxZGvZTKNQ/r8d5PBVFIdU5B8WEAIgoamtzROiH9xdr4bEzWmLP9PSMD0AjMlHTmP7LvZnjqLbpD57nKRhNbuklFsLbjjn3tiV7Mj82EYy0fn2hJT3VuT0VN08fKLiKiNjeOPN+lNekEZHaWmK8VPV/OrTJPmvuXAx2tuv+dlHd1XUYERF65S3/hRSNOi5JQNyPSJvx6bfAPrzIr8lIc+a0FtsS1nuGKv6ydNrhpmmgrneD2NcAJE3TYIlEjBfL/uenJGPvmQgAbRdElOviiFm9+s6PvCNuqONrvhzdYF8CFbcNDCK96ojTr3skkwHcF1loOJAymQwjIjYtFbu8UgnPZhwHW1rjnIik1pr2BfYhItXS4ghkuLVadc+cmo59kohYs3vcrgk2rjuMKJNhWvoZpSTh6FsbkhAcODe/D0DQ0bFony8fzWazGhF1Pp8X01qsO0uBOtr31c9bWh3RKPSXo62M3M3gISKStm2xdNrhnhv+3POjY6a3xu9qzCOZsHp2fC0L5Th2d6u1v7z+3Vh79p5KxVM4imF2RECcIQKAZxvOIYeffcsL/2hrs4bnmwbK3geEED1OTOxfroQgpRxxzPnuBA8AKCEMkUoaUHPl01JHn5madO549TVMlLyGKXrWrSNABm7hxau1jEad2UYAbVscNON/OvzsW17IZOr1OvAPJM3yESJiU1Kxb9cK3pEVN/wc4zjY1uoI07SQNKlGSQntZt5RpElZloVtrY5gHAbcWvSpfq901NSkcwcRsUyG2K5ICIvXemRZteqHF51ogP/mmi/1GMaL11UZxH4NANDRsYhlsyv/4dZmDZ9vj4gDAPCZgVptea1KFyHi+1tanddJBVCrekBEssH2bKIZqjkHFwAIGROJhM0FB6hWgxc8H7+j3OjWtqnxjbuKfbYLIuit/1IyuixmgUSEHRZZIQDV/0Pk+krzWOtvAAD6+6f9Qy8xbmboGwDZAADXPD009KU2nnqPVur9jOGJqVRMSAngeRFIGenGQ8dhP7AjcA2zt2jYDxOGwWK2wYUAKJd9GQbh7yOA/4aw+pN0akq5CR6ojzvfpc7NsA719Uaaq+++ZkEcBlYpJQEIYXuX+FIRFyKQ1mAaDIZqujDzxGv2mz17tkcAY2xav0/bStjX18eHz5kfrATzGMeTtaZTtaYjbdtqtQwApQEiCSAjCVJKaHh4rxg+PGxGLjLGUAgBhiFAGAAcAfwQIAzCIcbxz1rrX5oE/5tK2U80t8/nSXR07L5x6i+xTKORGMQS0ypCpC8MXDfUBEwAIgERAqIiREAiAiKmlUbGmWamxbUOSSjt2Gzj7NkH/FMBqMEmBACyyUyNt38dAKwDgGWVCk1TSh5R8vTxAPpwIphDmvYjoDbTNLlhCDSMl+1TIgApAaJIQhRFKoqiwSiMNjCOTyPiGkL6owX2Y6k49r8KeM1j795x6jApu4qdWOOhbpMRnh4aSqeEM1NYlh1Wa9ORs9bGqAjgHFSkdDmdiPf7QeBBWN0wZUpdRW3nGHpPDu/DbVNzD3+pwKVjG1tt52/9/Y/Tvhxc3JXqrvGwsReAxlm7gw3QYMMu0nuL9zvJRHsWWM37j30ACH2NF7MPoKPjFcl9muyFNCmTMimTMpL8f/QbpB46qFaaAAAAAElFTkSuQmCC" alt="真航線 True Course" width="145" height="120">
+      <span class="lock"><span class="zh">真航線</span><span class="en">TRUE COURSE</span></span>
+    </a>
+    <nav class="links" aria-label="主導覽">
+      <div class="navitem has-menu">
+        <button class="navlink" aria-haspopup="true" aria-expanded="false">航空新聞 <span class="caret">▾</span></button>
+        <div class="dropdown" role="menu">
+          <a href="#news-all" role="menuitem">全部新聞</a>
+          <a href="#news-industry" role="menuitem">產業動態</a>
+          <a href="#news-safety" role="menuitem">飛行安全</a>
+          <a href="#news-airport" role="menuitem">機場・航路</a>
+          <a href="#news-reg" role="menuitem">法規更新</a>
+        </div>
+      </div>
+      <div class="navitem has-menu">
+        <button class="navlink" aria-haspopup="true" aria-expanded="false">航空知識 <span class="caret">▾</span></button>
+        <div class="dropdown" role="menu">
+          <a href="#know-aerodynamics" role="menuitem">飛行原理</a>
+          <a href="#know-navigation" role="menuitem">航路導航</a>
+          <a href="#know-aircraft" role="menuitem">機型解析</a>
+          <a href="#know-weather" role="menuitem">航空氣象</a>
+          <a href="#know-atc" role="menuitem">航管與航路</a>
+          <a href="#know-training" role="menuitem">學飛之路</a>
+        </div>
+      </div>
+      <div class="navitem has-menu">
+        <button class="navlink" aria-haspopup="true" aria-expanded="false">航空安全 <span class="caret">▾</span></button>
+        <div class="dropdown" role="menu">
+          <a href="#safety-accident" role="menuitem">事故與調查</a>
+          <a href="#safety-concept" role="menuitem">安全觀念</a>
+          <a href="#safety-crm" role="menuitem">人為因素 CRM</a>
+          <a href="#safety-reg" role="menuitem">飛安法規</a>
+        </div>
+      </div>
+      <div class="navitem has-menu">
+        <button class="navlink" aria-haspopup="true" aria-expanded="false">航迷園地 <span class="caret">▾</span></button>
+        <div class="dropdown" role="menu">
+          <a href="#fan-photography" role="menuitem">航空攝影</a>
+          <a href="#fan-livery" role="menuitem">機隊塗裝</a>
+          <a href="#fan-events" role="menuitem">航空活動</a>
+          <a href="#fan-sim" role="menuitem">模擬飛行</a>
+        </div>
+      </div>
+      <div class="navitem"><a class="navlink" href="#about">關於本站</a></div>
+    </nav>
+    <span class="spacer"></span>
+    <button class="searchbtn" id="searchOpen" aria-label="搜尋文章">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+      <span class="sbtxt">搜尋</span>
+    </button>
+    <button class="menutoggle" aria-label="開啟選單" aria-expanded="false"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg></button>
+  </div>
+</header>
+
+<div id="home">
+<section class="topstories" id="top">
+  <div class="wrap ts-grid">
+    <article class="ts-feat reveal">
+      <a class="thumb thumb-lg" href="#a-turbulence" aria-label="封面故事"><span class="tag saf">SAFETY</span></a>
+      <div class="ts-body">
+        <div class="kicker">封面故事 · FEATURE</div>
+        <h2><a href="#a-turbulence">看懂晴空亂流:為什麼雷達照不到它,機師又怎麼預判?</a></h2>
+        <p>晴空亂流沒有雲、雷達也難以偵測,卻是巡航中最常見的受傷原因。從噴射氣流、地形波到即時機載回報,一次搞懂它從哪裡來、又該怎麼避開。</p>
+        <div class="ts-meta">飛行安全 · 2026/08/05 · 閱讀 8 分鐘</div>
+      </div>
+    </article>
+    <div class="ts-side reveal">
+      <div class="ts-side-head">編輯精選 · EDITORS&#39; PICKS</div>
+      <a class="ts-item" href="#a-lift"><span class="m">飛行知識</span><h3>升力到底怎麼來?用最少的公式講清楚</h3></a>
+      <a class="ts-item" href="#a-a320-737"><span class="m">機型解析</span><h3>A320 與 737:兩種操縱哲學的分岔路</h3></a>
+      <a class="ts-item" href="#a-metar"><span class="m">航路導航</span><h3>看懂 METAR:那一長串代碼在說什麼</h3></a>
+      <a class="ts-item" href="#a-training-path"><span class="m">學飛之路</span><h3>自訓與 CPL:一條時間與金錢的路線圖</h3></a>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="news">
+  <div class="wrap">
+    <div class="sec-head reveal"><div class="l"><span class="wp">◇ WPT 01 · LATEST</span><h2><span class="zh">航空新聞</span>Latest Briefing</h2></div><a class="more" href="#news-all">全部新聞 →</a></div>
+    <div class="filters reveal" id="filters"><button class="chip on" data-f="all">全部</button><button class="chip" data-f="industry">產業動態</button><button class="chip" data-f="safety">飛行安全</button><button class="chip" data-f="airport">機場・航路</button><button class="chip" data-f="reg">法規更新</button></div>
+    <div class="news" id="newsgrid">
+      <article class="card reveal" data-cat="industry"><a class="cardlink" href="#n-widebody" aria-label="寬體客機需求回溫,亞太航線運力持續擴張"></a><div class="strip-head"><span class="tag">INDUSTRY</span><span>產業動態</span></div><div class="body"><h3>寬體客機需求回溫,亞太航線運力持續擴張</h3><p>後疫情時期長程國際線復甦,多家亞太籍航空重啟並增訂寬體機隊,以因應跨洲客貨需求。</p><div class="foot"><span>DEP · 產業</span><span>閱讀 4 分鐘</span></div></div></article>
+      <article class="card reveal" data-cat="safety"><a class="cardlink" href="#n-turbulence-report" aria-label="亂流通報機制升級:即時氣象資料如何送進駕駛艙"></a><div class="strip-head"><span class="tag saf">SAFETY</span><span>飛行安全</span></div><div class="body"><h3>亂流通報機制升級:即時氣象資料如何送進駕駛艙</h3><p>晴空亂流難以雷達偵測,航空業正整合機載回報與衛星氣象,強化航路上的即時預警。</p><div class="foot"><span>DEP · 安全</span><span>閱讀 6 分鐘</span></div></div></article>
+      <article class="card reveal" data-cat="airport"><a class="cardlink" href="#n-t3" aria-label="桃園機場第三航廈進度:滑行道與停機坪規劃解析"></a><div class="strip-head"><span class="tag">AIRPORT</span><span>機場・航路</span></div><div class="body"><h3>桃園機場第三航廈進度:滑行道與停機坪規劃解析</h3><p>從空側容量到地面滑行動線,新航廈啟用後將如何改變桃園的離到場排序與延誤情況。</p><div class="foot"><span>DEP · 機場</span><span>閱讀 5 分鐘</span></div></div></article>
+      <article class="card reveal" data-cat="reg"><a class="cardlink" href="#n-medical" aria-label="民航局最新體檢與換證規定,對受訓學員有何影響?"></a><div class="strip-head"><span class="tag reg">REG</span><span>法規更新</span></div><div class="body"><h3>民航局最新體檢與換證規定,對受訓學員有何影響?</h3><p>整理最新一版航空人員體格檢查標準與航醫換證流程,幫助自訓與學飛階段的你提前準備。</p><div class="foot"><span>DEP · 法規</span><span>閱讀 3 分鐘</span></div></div></article>
+      <article class="card reveal" data-cat="industry"><a class="cardlink" href="#n-saf" aria-label="永續航空燃油 SAF:離商業化落地還有多遠?"></a><div class="strip-head"><span class="tag">INDUSTRY</span><span>產業動態</span></div><div class="body"><h3>永續航空燃油 SAF:離商業化落地還有多遠?</h3><p>從原料來源、成本結構到摻配比例限制,拆解 SAF 在減碳路徑中扮演的角色與現實瓶頸。</p><div class="foot"><span>DEP · 產業</span><span>閱讀 7 分鐘</span></div></div></article>
+      <article class="card reveal" data-cat="safety"><a class="cardlink" href="#n-swisscheese" aria-label="從一份事故調查報告,看「瑞士乳酪模型」怎麼運作"></a><div class="strip-head"><span class="tag saf">SAFETY</span><span>飛行安全</span></div><div class="body"><h3>從一份事故調查報告,看「瑞士乳酪模型」怎麼運作</h3><p>航空安全極少是單一原因造成。以真實案例說明多重防護層如何一層層被穿透。</p><div class="foot"><span>DEP · 安全</span><span>閱讀 8 分鐘</span></div></div></article>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="knowledge">
+  <div class="wrap">
+    <div class="sec-head reveal"><div class="l"><span class="wp">◇ WPT 02 · LEARN</span><h2><span class="zh">航空知識</span>Flight Knowledge</h2></div><a class="more" href="#know-aerodynamics">全部主題 →</a></div>
+    <div class="know">
+      <a class="krow reveal" href="#k-lift"><span class="kicon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M2 12h20M12 2c3 3 3 17 0 20M12 2c-3 3-3 17 0 20"/></svg></span><span class="kbody"><div class="cat">AERODYNAMICS</div><h3>升力是怎麼產生的?</h3><p>用最少的公式,講清楚攻角、白努利與牛頓第三定律在機翼上真正發生的事。</p></span></a>
+      <a class="krow reveal" href="#k-airway"><span class="kicon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M12 2v20M4 8l8-6 8 6M6 20h12"/></svg></span><span class="kbody"><div class="cat">NAVIGATION</div><h3>航路是怎麼畫出來的?</h3><p>從 VOR、航點到現代 RNAV,認識飛機在天上循著什麼看不見的路飛行。</p></span></a>
+      <a class="krow reveal" href="#k-a320-737"><span class="kicon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M4 14h16M6 14l2-6h8l2 6M9 20v-3M15 20v-3"/></svg></span><span class="kbody"><div class="cat">AIRCRAFT TYPE</div><h3>A320 與 737 的設計哲學差在哪?</h3><p>電傳飛控、駕駛艙介面與操縱邏輯——兩大窄體家族如何走向不同的路。</p></span></a>
+      <a class="krow reveal" href="#k-metar"><span class="kicon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M4 12a8 8 0 0116 0M8 12a4 4 0 018 0M2 16h20"/></svg></span><span class="kbody"><div class="cat">WEATHER</div><h3>看懂 METAR 與 TAF</h3><p>那一長串代碼其實是機師的天氣語言。逐段拆解風向、能見度與雲幕高。</p></span></a>
+      <a class="krow reveal" href="#k-atc"><span class="kicon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 3v4M12 17v4M3 12h4M17 12h4"/></svg></span><span class="kbody"><div class="cat">ATC</div><h3>航管在做什麼?</h3><p>從塔台、近場到區域管制,一趟航班背後有多少雙手在替它排序與隔離。</p></span></a>
+      <a class="krow reveal" href="#k-vspeeds"><span class="kicon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M4 20l7-16 3 8 3-4 3 12z"/></svg></span><span class="kbody"><div class="cat">PERFORMANCE</div><h3>起飛速度 V1、VR、V2 是什麼?</h3><p>短短幾秒內的三個關鍵速度,決定了一架飛機該繼續起飛還是中斷。</p></span></a>
+    </div>
+    <div class="notam reveal"><div class="hd"><span class="dot" style="background:var(--gold);box-shadow:0 0 8px var(--gold)"></span>NOTAM · 本週飛行小知識</div><div class="ct"><b class="mono" style="color:var(--gold)">Q:</b><span>為什麼飛機大多在 30,000 呎以上巡航?因為越高空氣越稀薄,阻力越小、燃油效率越好,同時也高於多數天氣系統。但太高又會逼近引擎推力與失速邊界之間的「棺材角」,因此每種機型都有它最佳的巡航高度。</span></div></div>
+  </div>
+</section>
+</div>
+<main id="pageview" class="page" hidden></main>
+
+<footer id="about">
+  <div class="wrap">
+    <div class="fgrid">
+      <div class="fcol about">
+        <a class="brand" href="#" aria-label="真航線 True Course"><img class="logo" src="data:image/png;base64,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" alt="真航線 True Course" width="145" height="120" style="height:32px"><span class="lock"><span class="zh">真航線</span><span class="en">TRUE COURSE</span></span></a>
+        <p>由熱愛飛行的人所寫的航空媒體。把新聞看懂、把知識講清楚,陪你一起看向天空。</p>
+      </div>
+      <div class="fcol"><h4>內容</h4><a href="#news-all">航空新聞</a><a href="#know-aerodynamics">飛行知識</a><a href="#know-aircraft">機型解析</a><a href="#know-weather">航空氣象</a></div>
+      <div class="fcol"><h4>主題</h4><a href="#know-aerodynamics">飛行原理</a><a href="#know-atc">航管與航路</a><a href="#safety-accident">飛航安全</a><a href="#know-training">學飛之路</a></div>
+      <div class="fcol"><h4>關於</h4><a href="#about">關於本站</a><a href="#about">投稿與合作</a><a href="#about">聯絡我們</a><a href="#about">訂閱電子報</a></div>
+    </div>
+    <div class="fbot"><span>© 2026 TRUE COURSE · 真航線</span><span>END OF TRANSMISSION · TPE ▸ ALL STATIONS</span></div>
+  </div>
+</footer>
+
+<div class="searchModal" id="searchModal" role="dialog" aria-modal="true" aria-label="搜尋" hidden>
+  <div class="searchBox">
+    <div class="searchBar">
+      <svg class="sicon" viewBox="0 0 24 24" fill="none" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+      <input id="searchInput" type="text" placeholder="搜尋文章、主題、機型…" autocomplete="off" spellcheck="false">
+      <button class="searchClose" id="searchClose" aria-label="關閉">Esc</button>
+    </div>
+    <div class="searchResults" id="searchResults"></div>
+  </div>
+</div>
+
+<script>
+window.__PAGES__ = {"news-all": {"t": "全部新聞", "s": "航空新聞", "k": "topic", "l": "全部新聞 — 相關文章整理中。"}, "news-industry": {"t": "產業動態", "s": "航空新聞", "k": "topic", "l": "產業動態 — 相關文章整理中。"}, "news-safety": {"t": "飛行安全", "s": "航空新聞", "k": "topic", "l": "飛行安全 — 相關文章整理中。"}, "news-airport": {"t": "機場・航路", "s": "航空新聞", "k": "topic", "l": "機場・航路 — 相關文章整理中。"}, "news-reg": {"t": "法規更新", "s": "航空新聞", "k": "topic", "l": "法規更新 — 相關文章整理中。"}, "know-aerodynamics": {"t": "飛行原理", "s": "航空知識", "k": "topic", "l": "飛行原理 — 相關文章整理中。"}, "know-navigation": {"t": "航路導航", "s": "航空知識", "k": "topic", "l": "航路導航 — 相關文章整理中。"}, "know-aircraft": {"t": "機型解析", "s": "航空知識", "k": "topic", "l": "機型解析 — 相關文章整理中。"}, "know-weather": {"t": "航空氣象", "s": "航空知識", "k": "topic", "l": "航空氣象 — 相關文章整理中。"}, "know-atc": {"t": "航管與航路", "s": "航空知識", "k": "topic", "l": "航管與航路 — 相關文章整理中。"}, "know-training": {"t": "學飛之路", "s": "航空知識", "k": "topic", "l": "學飛之路 — 相關文章整理中。"}, "safety-accident": {"t": "事故與調查", "s": "航空安全", "k": "topic", "l": "事故與調查 — 相關文章整理中。"}, "safety-concept": {"t": "安全觀念", "s": "航空安全", "k": "topic", "l": "安全觀念 — 相關文章整理中。"}, "safety-crm": {"t": "人為因素 CRM", "s": "航空安全", "k": "topic", "l": "人為因素 CRM — 相關文章整理中。"}, "safety-reg": {"t": "飛安法規", "s": "航空安全", "k": "topic", "l": "飛安法規 — 相關文章整理中。"}, "fan-photography": {"t": "航空攝影", "s": "航迷園地", "k": "topic", "l": "航空攝影 — 相關文章整理中。"}, "fan-livery": {"t": "機隊塗裝", "s": "航迷園地", "k": "topic", "l": "機隊塗裝 — 相關文章整理中。"}, "fan-events": {"t": "航空活動", "s": "航迷園地", "k": "topic", "l": "航空活動 — 相關文章整理中。"}, "fan-sim": {"t": "模擬飛行", "s": "航迷園地", "k": "topic", "l": "模擬飛行 — 相關文章整理中。"}, "about": {"t": "關於本站", "s": "關於", "k": "topic", "l": "真航線 True Course 是一個航空新聞與知識媒體。"}, "a-turbulence": {"t": "看懂晴空亂流:為什麼雷達照不到它,機師又怎麼預判?", "s": "飛行安全", "k": "article"}, "a-lift": {"t": "升力到底怎麼來?用最少的公式講清楚", "s": "飛行知識", "k": "article"}, "a-a320-737": {"t": "A320 與 737:兩種操縱哲學的分岔路", "s": "機型解析", "k": "article"}, "a-metar": {"t": "看懂 METAR:那一長串代碼在說什麼", "s": "航路導航", "k": "article"}, "a-training-path": {"t": "自訓與 CPL:一條時間與金錢的路線圖", "s": "學飛之路", "k": "article"}, "n-widebody": {"t": "寬體客機需求回溫,亞太航線運力持續擴張", "s": "產業動態", "k": "article"}, "n-turbulence-report": {"t": "亂流通報機制升級:即時氣象資料如何送進駕駛艙", "s": "飛行安全", "k": "article"}, "n-t3": {"t": "桃園機場第三航廈進度:滑行道與停機坪規劃解析", "s": "機場・航路", "k": "article"}, "n-medical": {"t": "民航局最新體檢與換證規定,對受訓學員有何影響?", "s": "法規更新", "k": "article"}, "n-saf": {"t": "永續航空燃油 SAF:離商業化落地還有多遠?", "s": "產業動態", "k": "article"}, "n-swisscheese": {"t": "從一份事故調查報告,看「瑞士乳酪模型」怎麼運作", "s": "飛行安全", "k": "article"}, "k-lift": {"t": "升力是怎麼產生的?", "s": "飛行原理", "k": "article"}, "k-airway": {"t": "航路是怎麼畫出來的?", "s": "航路導航", "k": "article"}, "k-a320-737": {"t": "A320 與 737 的設計哲學差在哪?", "s": "機型解析", "k": "article"}, "k-metar": {"t": "看懂 METAR 與 TAF", "s": "航空氣象", "k": "article"}, "k-atc": {"t": "航管在做什麼?", "s": "航管", "k": "article"}, "k-vspeeds": {"t": "起飛速度 V1、VR、V2 是什麼?", "s": "航機性能", "k": "article"}};
+  /* ================= 全站設定:改這裡即可全站生效 ================= */
+  // 導覽選單:要新增主題,只要在這裡加一行(或加一個區塊),全站每頁都會更新
+  var NAV=[
+    {label:'航空新聞', items:[['全部新聞','news-all'],['產業動態','news-industry'],['飛行安全','news-safety'],['機場・航路','news-airport'],['法規更新','news-reg']]},
+    {label:'航空知識', items:[['飛行原理','know-aerodynamics'],['航路導航','know-navigation'],['機型解析','know-aircraft'],['航空氣象','know-weather'],['航管與航路','know-atc'],['學飛之路','know-training']]},
+    {label:'航空安全', items:[['事故與調查','safety-accident'],['安全觀念','safety-concept'],['人為因素 CRM','safety-crm'],['飛安法規','safety-reg']]},
+    {label:'航迷園地', items:[['航空攝影','fan-photography'],['機隊塗裝','fan-livery'],['航空活動','fan-events'],['模擬飛行','fan-sim']]},
+    {label:'關於本站', href:'about.html'}
+  ];
+  // 穩定版 METAR:貼上你的 Cloudflare Worker 網址即可改用(留空則自動用公開代理備援)
+  // 例:window.METAR_WORKER='https://metar.你的名稱.workers.dev';
+  window.METAR_WORKER='';
+
+  // 依 NAV 動態產生導覽(每頁的 <nav id="mainnav"> 都會被填入)
+  (function(){
+    var nav=document.getElementById('mainnav'); if(!nav) return;
+    var h='';
+    NAV.forEach(function(sec){
+      if(sec.href){ h+='<div class="navitem"><a class="navlink" href="'+sec.href+'">'+sec.label+'</a></div>'; return; }
+      h+='<div class="navitem has-menu"><button class="navlink" aria-haspopup="true" aria-expanded="false">'+sec.label+' <span class="caret">\u25be</span></button><div class="dropdown" role="menu">';
+      sec.items.forEach(function(it){ h+='<a href="'+it[1]+'.html" role="menuitem">'+it[0]+'</a>'; });
+      h+='</div></div>';
+    });
+    nav.innerHTML=h;
+  })();
+  /* ============================================================== */
+
+
+  // Zulu (UTC) 時鐘
+  function tickZulu(){
+    var d=new Date();
+    var p=n=>String(n).padStart(2,'0');
+    var el=document.getElementById('zulu');
+    if(el) el.textContent=p(d.getUTCHours())+':'+p(d.getUTCMinutes())+':'+p(d.getUTCSeconds())+'Z';
+  }
+  tickZulu(); setInterval(tickZulu,1000);
+
+  // 即時 TPE(RCTP)METAR。官方 API 不允許前端直接呼叫(CORS),故經公開中介轉發並含備援。
+  async function loadMetar(){
+    var el=document.getElementById('metar'); if(!el) return;
+    var target='https://aviationweather.gov/api/data/metar?ids=RCTP&format=raw';
+    var srcs=[];
+    if(window.METAR_WORKER){ srcs.push(window.METAR_WORKER+(window.METAR_WORKER.indexOf('?')>-1?'&':'?')+'ids=RCTP'); }
+    srcs.push('https://api.codetabs.com/v1/proxy/?quest='+encodeURIComponent(target));
+    srcs.push('https://api.allorigins.win/raw?url='+encodeURIComponent(target));
+    for(var i=0;i<srcs.length;i++){
+      try{
+        var r=await fetch(srcs[i],{cache:'no-store'});
+        if(!r.ok) continue;
+        var t=(await r.text()).trim();
+        if(t && t.indexOf('RCTP')>-1){ el.textContent=t; el.title=t; return; }
+      }catch(e){}
+    }
+    el.textContent='RCTP METAR · 目前無法載入';
+  }
+  loadMetar(); setInterval(loadMetar, 600000);
+
+  // 新聞分類篩選
+  var filters=document.getElementById('filters');
+  if(filters){
+    filters.addEventListener('click',function(e){
+      var b=e.target.closest('.chip'); if(!b) return;
+      filters.querySelectorAll('.chip').forEach(c=>c.classList.remove('on'));
+      b.classList.add('on');
+      var f=b.dataset.f;
+      document.querySelectorAll('#newsgrid .card').forEach(function(card){
+        card.style.display=(f==='all'||card.dataset.cat===f)?'':'none';
+      });
+    });
+  }
+
+  // 進場淡入
+  var io=new IntersectionObserver(function(es){
+    es.forEach(function(en){ if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target);} });
+  },{threshold:.12});
+  document.querySelectorAll('.reveal').forEach(function(el){io.observe(el)});
+
+  // ── 下拉選單 ──
+  document.querySelectorAll('.navitem.has-menu > .navlink').forEach(function(btn){
+    btn.addEventListener('click',function(e){
+      e.preventDefault();
+      var item=btn.parentElement, willOpen=!item.classList.contains('open');
+      document.querySelectorAll('.navitem.open').forEach(function(i){
+        if(i!==item){i.classList.remove('open');var b=i.querySelector('.navlink');if(b)b.setAttribute('aria-expanded','false');}
+      });
+      item.classList.toggle('open',willOpen);
+      btn.setAttribute('aria-expanded',String(willOpen));
+    });
+  });
+  // 點選單以外處 / 按 Esc 關閉
+  document.addEventListener('click',function(e){
+    if(!e.target.closest('.navitem')){
+      document.querySelectorAll('.navitem.open').forEach(function(i){i.classList.remove('open');var b=i.querySelector('.navlink');if(b)b.setAttribute('aria-expanded','false');});
+    }
+  });
+  document.addEventListener('keydown',function(e){ if(e.key==='Escape'){
+    document.querySelectorAll('.navitem.open').forEach(function(i){i.classList.remove('open');});
+    var nv=document.querySelector('header.nav'); if(nv) nv.classList.remove('open');
+  }});
+  // 漢堡選單(手機)
+  var mt=document.querySelector('.menutoggle'), navEl=document.querySelector('header.nav');
+  if(mt&&navEl){ mt.addEventListener('click',function(){
+    var open=navEl.classList.toggle('open'); mt.setAttribute('aria-expanded',String(open));
+  }); }
+  // 點導覽連結後收合手機選單
+  document.querySelectorAll('nav.links a').forEach(function(a){
+    a.addEventListener('click',function(){ if(navEl) navEl.classList.remove('open'); });
+  });
+  // 新聞下拉 → 連動既有分類篩選
+  document.querySelectorAll('#newsmenu a[data-filter]').forEach(function(a){
+    a.addEventListener('click',function(){
+      var chip=document.querySelector('#filters .chip[data-f="'+a.dataset.filter+'"]');
+      if(chip) chip.click();
+      document.querySelectorAll('.navitem.open').forEach(function(i){i.classList.remove('open');});
+    });
+  });
+
+
+  // ── 站內搜尋 ──
+  (function(){
+    var openBtn=document.getElementById('searchOpen'), modal=document.getElementById('searchModal'),
+        input=document.getElementById('searchInput'), results=document.getElementById('searchResults'),
+        closeBtn=document.getElementById('searchClose');
+    if(!openBtn||!modal) return;
+    var index=[];
+    function add(title,section,snippet,target,href){ title=(title||'').trim(); if(!title)return;
+      index.push({title:title,section:(section||'').trim(),snippet:(snippet||'').trim(),target:target,href:href}); }
+    (window.__PAGES__?Object.keys(window.__PAGES__):[]).forEach(function(s){var p=window.__PAGES__[s];add(p.t,p.s,'',null,'#'+s);});
+    var open=false,sel=0,current=[];
+    function openM(){modal.hidden=false;open=true;document.body.style.overflow='hidden';input.value='';render('');setTimeout(function(){input.focus();},30);}
+    function closeM(){modal.hidden=true;open=false;document.body.style.overflow='';}
+    function esc(s){return s.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');}
+    function hl(t,q){if(!q)return t;try{return t.replace(new RegExp('('+esc(q)+')','ig'),'<mark>$1</mark>');}catch(e){return t;}}
+    function render(q){q=(q||'').trim();
+      if(!q){results.innerHTML='<div class="searchhint">輸入關鍵字搜尋站內文章 · 例如「亂流」「A320」「METAR」</div>';current=[];return;}
+      var ql=q.toLowerCase();
+      current=index.filter(function(x){return (x.title+' '+x.snippet+' '+x.section).toLowerCase().indexOf(ql)>-1;});
+      sel=0;
+      if(!current.length){results.innerHTML='<div class="sempty">找不到「'+q+'」相關的文章</div>';return;}
+      results.innerHTML=current.map(function(x,i){return '<div class="sres'+(i===0?' sel':'')+'" data-i="'+i+'">'
+        +'<span class="stag">'+x.section+'</span><h4>'+hl(x.title,q)+'</h4>'+(x.snippet?'<p>'+hl(x.snippet,q)+'</p>':'')+'</div>';}).join('');
+      Array.prototype.forEach.call(results.querySelectorAll('.sres'),function(el){el.addEventListener('click',function(){go(current[+el.dataset.i]);});});}
+    function go(item){ if(!item)return; if(item.href){location.hash=item.href;} closeM(); }
+    openBtn.addEventListener('click',openM);
+    closeBtn.addEventListener('click',closeM);
+    modal.addEventListener('click',function(e){if(e.target===modal)closeM();});
+    input.addEventListener('input',function(){render(input.value);});
+    document.addEventListener('keydown',function(e){
+      if(!open&&(e.key==='/'||((e.ctrlKey||e.metaKey)&&e.key.toLowerCase()==='k'))){e.preventDefault();openM();return;}
+      if(!open)return;
+      if(e.key==='Escape'){closeM();}
+      else if(e.key==='ArrowDown'||e.key==='ArrowUp'){e.preventDefault();if(!current.length)return;
+        var els=results.querySelectorAll('.sres');if(els[sel])els[sel].classList.remove('sel');
+        sel=(sel+(e.key==='ArrowDown'?1:-1)+current.length)%current.length;els[sel].classList.add('sel');els[sel].scrollIntoView({block:'nearest'});}
+      else if(e.key==='Enter'){if(current[sel])go(current[sel]);}
+    });
+  })();
+
+
+
+  // ── 單頁路由(hash)──
+  (function(){
+    var PAGES=window.__PAGES__||{}, home=document.getElementById('home'), pv=document.getElementById('pageview');
+    function esc(x){return (x||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');}
+    function renderPage(slug){var p=PAGES[slug]; if(!p)return '';
+      var s='<div class="crumb"><a href="#" data-home>首頁</a> <span>/</span> <span>'+esc(p.s)+'</span></div>';
+      s+='<div class="kicker">'+esc(p.s)+'</div><h1>'+esc(p.t)+'</h1>';
+      if(p.k==='article'){s+='<div class="article-meta">真航線編輯部 · 內容準備中</div><div class="page-thumb"></div>';}
+      else if(p.l){s+='<p class="lede">'+esc(p.l)+'</p>';}
+      s+='<div class="placeholder"><div class="big">'+(p.k==='article'?'這篇文章即將上線':'此分類的文章即將上線')+'</div><p>版面已就緒,補上內容即可發布。</p></div>';
+      s+='<a class="backhome" href="#" data-home>← 回首頁</a>'; return s;}
+    function showHome(){ if(pv){pv.hidden=true;pv.innerHTML='';} if(home)home.hidden=false; }
+    window.__goHome__=function(){ showHome(); if(location.hash){history.replaceState(null,'','#');} };
+    function route(){var h=(location.hash||'').replace(/^#/,'');
+      if(PAGES[h]){ if(home)home.hidden=true; if(pv){pv.innerHTML=renderPage(h);pv.hidden=false;} window.scrollTo(0,0);}
+      else { showHome(); }}
+    document.addEventListener('click',function(e){var a=e.target.closest('a[data-home]'); if(a){e.preventDefault(); if(location.hash){location.hash='';} else showHome();}});
+    window.addEventListener('hashchange',route); route();
+  })();
+
+</script>
+</body>
+</html>
