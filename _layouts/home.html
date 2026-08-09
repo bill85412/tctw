@@ -1,0 +1,54 @@
+---
+layout: default
+---
+{% assign featured = site.articles | where: "featured", true | sort: "date" | reverse | first %}
+{% unless featured %}{% assign featured = site.articles | sort: "date" | reverse | first %}{% endunless %}
+{% assign latest = site.articles | sort: "date" | reverse %}
+{% assign fcat = site.data.tax.categories[featured.category] %}
+<div id="home">
+<section class="topstories" id="top">
+  <div class="wrap ts-grid">
+    <article class="ts-feat reveal">
+      <a class="thumb thumb-lg" href="{{ featured.url | relative_url }}" aria-label="封面故事">{% if featured.thumb %}<img src="{{ featured.thumb | relative_url }}" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover">{% endif %}<span class="tag">{{ featured.category | upcase }}</span></a>
+      <div class="ts-body">
+        <div class="kicker">封面故事 · FEATURE</div>
+        <h2><a href="{{ featured.url | relative_url }}">{{ featured.title }}</a></h2>
+        <p>{{ featured.excerpt }}</p>
+        <div class="ts-meta">{{ fcat.label | default: featured.category }} · {{ featured.date | date: "%Y/%m/%d" }}</div>
+      </div>
+    </article>
+    <div class="ts-side reveal">
+      <div class="ts-side-head">編輯精選 · EDITORS&#39; PICKS</div>
+      {% assign picks = latest | where_exp: "a", "a.url != featured.url" %}
+      {% for a in picks limit: 4 %}{% assign pc = site.data.tax.categories[a.category] %}
+      <a class="ts-item" href="{{ a.url | relative_url }}"><span class="m">{{ pc.label | default: a.category }}</span><h3>{{ a.title }}</h3></a>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="news">
+  <div class="wrap">
+    <div class="sec-head reveal"><div class="l"><span class="wp">◇ WPT 01 · LATEST</span><h2><span class="zh">航空新聞</span>Latest Briefing</h2></div><a class="more" href="{{ '/news/' | relative_url }}">全部新聞 →</a></div>
+    <div class="filters reveal" id="filters"><button class="chip on" data-f="all">全部</button><button class="chip" data-f="industry">產業動態</button><button class="chip" data-f="safety">飛行安全</button><button class="chip" data-f="reg">法規更新</button></div>
+    <div class="news" id="newsgrid">
+      {% assign newslist = site.articles | where: "section", "news" | sort: "date" | reverse %}
+      {% for a in newslist limit: 6 %}{% assign c = site.data.tax.categories[a.category] %}
+      <article class="card reveal" data-cat="{{ a.category }}"><a class="cardlink" href="{{ a.url | relative_url }}" aria-label="{{ a.title }}"></a><div class="strip-head"><span class="tag">{{ a.category | upcase }}</span><span>{{ c.label | default: a.category }}</span></div><div class="body"><h3>{{ a.title }}</h3><p>{{ a.excerpt }}</p><div class="foot"><span>DEP · {{ c.label | default: a.category }}</span></div></div></article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="knowledge">
+  <div class="wrap">
+    <div class="sec-head reveal"><div class="l"><span class="wp">◇ WPT 02 · LEARN</span><h2><span class="zh">航空知識</span>Aviation Knowledge</h2></div><a class="more" href="{{ '/knowledge/aerodynamics/' | relative_url }}">全部主題 →</a></div>
+    <div class="know">
+      {% assign knlist = site.articles | where: "section", "knowledge" | sort: "date" | reverse %}
+      {% for a in knlist limit: 5 %}{% assign c = site.data.tax.categories[a.category] %}
+      <a class="krow reveal" href="{{ a.url | relative_url }}"><span class="kicon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 3v4M12 17v4M3 12h4M17 12h4"/></svg></span><span class="kbody"><div class="cat">{{ a.category | upcase }}</div><h3>{{ a.title }}</h3><p>{{ a.excerpt }}</p></span></a>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+</div>

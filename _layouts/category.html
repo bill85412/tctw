@@ -1,0 +1,26 @@
+---
+layout: default
+---
+<main class="page">
+  <div class="crumb"><a href="{{ '/' | relative_url }}">首頁</a> <span>/</span> <span>{{ site.data.tax.sections[page.section].label }}</span>{% if page.category %} <span>/</span> <span>{{ page.title }}</span>{% endif %}</div>
+  <div class="kicker">{{ page.title }}</div>
+  <h1>{{ page.title }}</h1>
+  {% if page.lede %}<p class="lede">{{ page.lede }}</p>{% endif %}
+  {% if page.category %}{% assign list = site.articles | where: "category", page.category | sort: "date" | reverse %}{% else %}{% assign list = site.articles | where: "section", page.section | sort: "date" | reverse %}{% endif %}
+  {% if list.size > 0 %}
+  <div class="artlist">
+    {% for a in list %}{% assign c = site.data.tax.categories[a.category] %}
+    <a class="artcard" href="{{ a.url | relative_url }}">
+      <span class="atext">
+        <span class="atag">{{ c.label | default: a.category }}</span>
+        <h3>{{ a.title }}</h3>
+        <span class="ameta">閱讀更多 →</span>
+      </span>
+      <span class="athumb">{% if a.thumb %}<img src="{{ a.thumb | relative_url }}" alt="" loading="lazy">{% endif %}</span>
+    </a>
+    {% endfor %}
+  </div>
+  {% else %}
+  <div class="placeholder"><div class="big">此分類的文章即將上線</div><p>版面已就緒，補上內容即可發布。</p></div>
+  {% endif %}
+</main>

@@ -1,0 +1,20 @@
+sections:
+  news: { label: 航空新聞 }
+  knowledge: { label: 航空知識 }
+  safety: { label: 航空安全 }
+  fanzone: { label: 航迷園地 }
+categories:
+  industry: { label: 產業動態, section: news }
+  safety: { label: 飛行安全, section: news }
+  reg: { label: 法規更新, section: news }
+  aerodynamics: { label: 飛行原理, section: knowledge }
+  weather: { label: 航空氣象, section: knowledge }
+  ifr: { label: 儀表飛行, section: knowledge }
+  atc: { label: 航管通訊, section: knowledge }
+  aircraft: { label: 機型解析, section: knowledge }
+  concept: { label: 安全觀念, section: safety }
+  accident: { label: 事故與調查, section: safety }
+  human-factors: { label: 人因工程, section: safety }
+  photography: { label: 航空攝影, section: fanzone }
+  events: { label: 航空活動, section: fanzone }
+  sim: { label: 模擬飛行, section: fanzone }

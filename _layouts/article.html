@@ -1,0 +1,12 @@
+---
+layout: default
+---
+{% assign cat = site.data.tax.categories[page.category] %}{% assign sec = site.data.tax.sections[page.section] %}
+<main class="page">
+  <div class="crumb"><a href="{{ '/' | relative_url }}">首頁</a>{% if sec %} <span>/</span> <span>{{ sec.label }}</span>{% endif %}{% if cat %} <span>/</span> <a href="{{ '/' | append: page.section | append: '/' | append: page.category | append: '/' | relative_url }}">{{ cat.label }}</a>{% endif %}</div>
+  <div class="kicker">{{ page.kicker | default: cat.label }}</div>
+  <h1>{{ page.title }}</h1>
+  <div class="article-meta">真航線編輯部{% if page.date %} · {{ page.date | date: "%Y/%m/%d" }}{% endif %}</div>
+  <article class="article-body">{{ content }}</article>
+  <a class="backhome" href="{{ '/' | relative_url }}">← 回首頁</a>
+</main>

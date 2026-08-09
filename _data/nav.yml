@@ -1,0 +1,27 @@
+- label: 航空新聞
+  items:
+    - { t: 全部新聞, url: /news/ }
+    - { t: 產業動態, url: /news/industry/ }
+    - { t: 飛行安全, url: /news/safety/ }
+    - { t: 法規更新, url: /news/reg/ }
+- label: 航空知識
+  items:
+    - { t: 飛行原理, url: /knowledge/aerodynamics/ }
+    - { t: 航空氣象, url: /knowledge/weather/ }
+    - { t: 儀表飛行, url: /knowledge/ifr/ }
+    - { t: 航管通訊, url: /knowledge/atc/ }
+    - { t: 機型解析, url: /knowledge/aircraft/ }
+- label: 航空安全
+  items:
+    - { t: 安全觀念, url: /safety/concept/ }
+    - { t: 事故與調查, url: /safety/accident/ }
+    - { t: 人因工程, url: /safety/human-factors/ }
+- label: 航迷園地
+  items:
+    - { t: 航空攝影, url: /fanzone/photography/ }
+    - { t: 航空活動, url: /fanzone/events/ }
+    - { t: 模擬飛行, url: /fanzone/sim/ }
+- label: 航空商城
+  url: /shop/
+- label: 關於我們
+  url: /about/

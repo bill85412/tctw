@@ -1,0 +1,5 @@
+<script>
+  window.METAR_WORKER = {{ site.metar_worker | jsonify }};
+  window.SEARCH_URL = "{{ '/search.json' | relative_url }}";
+</script>
+<script src="{{ '/assets/js/app.js' | relative_url }}"></script>

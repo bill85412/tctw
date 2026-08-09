@@ -1,0 +1,4 @@
+---
+permalink: /search.json
+---
+[{% for a in site.articles %}{"title": {{ a.title | jsonify }}, "url": {{ a.url | relative_url | jsonify }}, "section": {{ a.section | default: "" | jsonify }}, "category": {{ a.category | default: "" | jsonify }}, "excerpt": {{ a.excerpt | default: a.content | strip_html | truncate: 90 | jsonify }}}{% unless forloop.last %},{% endunless %}{% endfor %}]

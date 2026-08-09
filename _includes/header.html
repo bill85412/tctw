@@ -1,0 +1,30 @@
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="{{ '/' | relative_url }}" aria-label="真航線 True Course 首頁">
+      <img class="logo" src="{{ '/assets/img/logo-dark.png' | relative_url }}" alt="真航線 True Course" width="145" height="120">
+      <span class="lock"><span class="zh">真航線</span><span class="en">TRUE COURSE</span></span>
+    </a>
+    <nav class="links" aria-label="主導覽">
+      {%- for sec in site.data.nav %}
+      {%- if sec.items %}
+      <div class="navitem has-menu">
+        <button class="navlink" aria-haspopup="true" aria-expanded="false">{{ sec.label }} <span class="caret">▾</span></button>
+        <div class="dropdown" role="menu">
+          {%- for it in sec.items %}
+          <a href="{{ it.url | relative_url }}" role="menuitem">{{ it.t }}</a>
+          {%- endfor %}
+        </div>
+      </div>
+      {%- else %}
+      <div class="navitem"><a class="navlink" href="{{ sec.url | relative_url }}">{{ sec.label }}</a></div>
+      {%- endif %}
+      {%- endfor %}
+    </nav>
+    <span class="spacer"></span>
+    <button class="searchbtn" id="searchOpen" aria-label="搜尋文章">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+      <span class="sbtxt">搜尋</span>
+    </button>
+    <button class="menutoggle" aria-label="開啟選單" aria-expanded="false"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg></button>
+  </div>
+</header>
