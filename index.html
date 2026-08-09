@@ -213,7 +213,7 @@
   /* ── 頁尾 ───────────────────────────────── */
   footer{border-top:1px solid var(--line);margin-top:40px;padding:52px 0 30px;
     background:linear-gradient(var(--bg),var(--bg-2))}
-  .fgrid{display:grid;grid-template-columns:1.6fr 1fr;gap:30px;margin-bottom:38px}
+  .fgrid{display:grid;grid-template-columns:1.4fr 1fr;gap:48px;margin-bottom:38px}
   .fcol h4{font-family:var(--font-mono);font-size:12px;letter-spacing:.16em;color:var(--faint);
     margin:0 0 16px;text-transform:uppercase}
   .fcol a{display:block;color:var(--dim);font-size:14px;padding:5px 0;transition:.18s}
@@ -364,7 +364,6 @@
           <a href="#news-all" role="menuitem">全部新聞</a>
           <a href="#news-industry" role="menuitem">產業動態</a>
           <a href="#news-safety" role="menuitem">飛行安全</a>
-          <a href="#news-airport" role="menuitem">機場・航路</a>
           <a href="#news-reg" role="menuitem">法規更新</a>
         </div>
       </div>
@@ -372,32 +371,30 @@
         <button class="navlink" aria-haspopup="true" aria-expanded="false">航空知識 <span class="caret">▾</span></button>
         <div class="dropdown" role="menu">
           <a href="#know-aerodynamics" role="menuitem">飛行原理</a>
-          <a href="#know-navigation" role="menuitem">航路導航</a>
-          <a href="#know-aircraft" role="menuitem">機型解析</a>
           <a href="#know-weather" role="menuitem">航空氣象</a>
-          <a href="#know-atc" role="menuitem">航管與航路</a>
-          <a href="#know-training" role="menuitem">學飛之路</a>
+          <a href="#know-ifr" role="menuitem">儀表飛行</a>
+          <a href="#know-atc" role="menuitem">航管通訊</a>
+          <a href="#know-aircraft" role="menuitem">機型解析</a>
         </div>
       </div>
       <div class="navitem has-menu">
         <button class="navlink" aria-haspopup="true" aria-expanded="false">航空安全 <span class="caret">▾</span></button>
         <div class="dropdown" role="menu">
-          <a href="#safety-accident" role="menuitem">事故與調查</a>
           <a href="#safety-concept" role="menuitem">安全觀念</a>
-          <a href="#safety-crm" role="menuitem">人為因素 CRM</a>
-          <a href="#safety-reg" role="menuitem">飛安法規</a>
+          <a href="#safety-accident" role="menuitem">事故與調查</a>
+          <a href="#safety-crm" role="menuitem">人因工程</a>
         </div>
       </div>
       <div class="navitem has-menu">
         <button class="navlink" aria-haspopup="true" aria-expanded="false">航迷園地 <span class="caret">▾</span></button>
         <div class="dropdown" role="menu">
           <a href="#fan-photography" role="menuitem">航空攝影</a>
-          <a href="#fan-livery" role="menuitem">機隊塗裝</a>
           <a href="#fan-events" role="menuitem">航空活動</a>
           <a href="#fan-sim" role="menuitem">模擬飛行</a>
         </div>
       </div>
-      <div class="navitem"><a class="navlink" href="#about">關於本站</a></div>
+      <div class="navitem"><a class="navlink" href="#shop">航空商城</a></div>
+      <div class="navitem"><a class="navlink" href="#about">關於我們</a></div>
     </nav>
     <span class="spacer"></span>
     <button class="searchbtn" id="searchOpen" aria-label="搜尋文章">
@@ -477,7 +474,7 @@
         <p>由熱愛飛行的人所創立的航空媒體<br>把新聞看懂、把知識講清楚，陪你一起看向天空</p>
         <div class="social"><a href="https://www.facebook.com/people/真航線-True-Course/61585339173231/" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M22 12a10 10 0 1 0-11.5 9.9v-7H8v-2.9h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.4h-1.2c-1.2 0-1.6.8-1.6 1.6v1.9H16l-.4 2.9h-2.1v7A10 10 0 0 0 22 12z"/></svg></a><a href="https://www.instagram.com/truecourse.tw/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a><a href="https://www.threads.com/@truecourse.tw" target="_blank" rel="noopener" aria-label="Threads"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16.7 11.5c-.1-.05-.22-.1-.33-.15-.2-3.6-2.16-5.66-5.46-5.68h-.05c-1.97 0-3.62.84-4.62 2.37l1.8 1.24c.75-1.13 1.93-1.37 2.82-1.37h.03c1.1.01 1.93.33 2.47.95.39.45.65 1.08.77 1.87-.95-.16-1.98-.2-3.08-.13-3.1.18-5.08 1.98-4.95 4.48.07 1.27.7 2.36 1.79 3.08.92.6 2.1.9 3.33.83 1.62-.09 2.9-.71 3.78-1.84.67-.86 1.09-1.97 1.28-3.37.77.46 1.34 1.08 1.66 1.82.54 1.27.57 3.35-1.12 5.03-1.48 1.48-3.25 2.12-5.94 2.14-2.98-.02-5.24-.98-6.7-2.85C2.68 17.8 2.05 15.7 2.02 12.75v-.02C2.05 9.78 2.68 7.68 4.14 5.99 5.6 4.12 7.86 3.16 10.84 3.14c3 .02 5.28 1 6.8 2.86.75.93 1.32 2.1 1.68 3.46l1.9-.5c-.43-1.68-1.14-3.14-2.11-4.34C17.2 2.34 14.34 1.14 10.85 1.12h-.01C7.36 1.14 4.5 2.34 2.55 4.62.79 6.72.09 9.5.06 12.74v.02c.03 3.24.73 6.02 2.49 8.12 1.94 2.28 4.8 3.48 8.29 3.5h.01c3.16-.02 5.38-.85 7.2-2.67 2.39-2.38 2.32-5.37 1.53-7.2-.57-1.32-1.65-2.39-3.13-3.09z"/></svg></a><a href="https://x.com" target="_blank" rel="noopener" aria-label="X"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.24 2H21l-6.44 7.36L22 22h-6.03l-4.72-6.17L5.8 22H3l6.9-7.88L2 2h6.18l4.27 5.64L18.24 2zm-1.06 18h1.67L7.9 3.9H6.1L17.18 20z"/></svg></a><a href="https://www.youtube.com/@TrueCourseTW" target="_blank" rel="noopener" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M23 12s0-3.2-.4-4.7a2.5 2.5 0 0 0-1.77-1.77C19.3 5.1 12 5.1 12 5.1s-7.3 0-8.83.43A2.5 2.5 0 0 0 1.4 7.3C1 8.8 1 12 1 12s0 3.2.4 4.7a2.5 2.5 0 0 0 1.77 1.77C4.7 18.9 12 18.9 12 18.9s7.3 0 8.83-.43a2.5 2.5 0 0 0 1.77-1.77C23 15.2 23 12 23 12zM9.8 15.3V8.7l5.7 3.3-5.7 3.3z"/></svg></a></div>
       </div>
-      <div class="fcol"><h4>關於</h4><a href="#about">關於本站</a><a href="#contribute">投稿與合作</a><a href="#contact">聯絡我們</a></div>
+      <div class="fcol"><h4>關於</h4><a href="#about">關於我們</a><a href="#shop">航空商城</a><a href="#contribute">投稿與合作</a><a href="#contact">聯絡我們</a></div>
     </div>
     <div class="fbot"><span>© 2026 TRUE COURSE · 真航線</span><span>END OF TRANSMISSION · TPE ▸ ALL STATIONS</span></div>
   </div>
@@ -502,14 +499,25 @@ window.__PAGES__ = {"a-st-elmo":{"t":"飛機窗外的藍色火焰：什麼是聖
     window.__PAGES__.contribute={t:"投稿與合作",s:"關於",k:"page"};
     window.__PAGES__.contact={t:"聯絡我們",s:"關於",k:"page"};
     window.__PAGECONTENT__={"about": "<p>真航線 True Course 是一個專注於航空的中文媒體,由熱愛飛行的人所經營。我們相信,飛行的世界既專業又迷人,值得用看得懂的方式好好說清楚。</p><p>在這裡你會看到三種內容:即時的航空新聞與產業動態、拆解飛行原理與機型的知識文章,以及飛行安全與航空氣象的深入解析。無論你是機師、學員,還是熱愛天空的航迷,我們都希望能陪你飛得更明白。</p><p>站名「True Course(真航線)」取自航海與航空的導航術語,意指相對真北的實際航跡,提醒我們:看清方向,才能飛得穩、飛得遠。</p>", "contribute": "<p>我們歡迎各種形式的合作與貢獻:</p><p><b>投稿</b>:如果你有航空相關的知識、經驗或觀察想分享,歡迎來信,我們會盡快回覆並協助編輯。</p><p><b>內容合作與授權</b>:媒體轉載、聯合企劃、內容授權等都可以談。</p><p><b>廣告與贊助</b>:若你的產品或服務與航空、旅遊、教育相關,歡迎洽詢版位與方案。</p><p>合作請來信:<a href=\"mailto:hello@truecourse.tw\">hello@truecourse.tw</a>(請替換為你的實際信箱)。</p>", "contact": "<p>有任何問題、建議或指教,都歡迎與我們聯繫。</p><p>Email:<a href=\"mailto:hello@truecourse.tw\">hello@truecourse.tw</a></p><p>你也可以透過頁尾的社群連結找到我們(Facebook、Instagram、Threads、X、YouTube)。</p><p>我們通常會在數個工作天內回覆。(以上聯絡資訊為範例,請替換為你的實際資訊。)</p>"};
+    window.__PAGES__["know-atc"]={t:"航管通訊",s:"航空知識",k:"topic",l:"航管通訊 — 相關文章整理中。"};
+    window.__PAGES__["safety-crm"]={t:"人因工程",s:"航空安全",k:"topic",l:"人因工程 — 相關文章整理中。"};
+    window.__PAGES__["about"]={t:"關於我們",s:"關於",k:"topic",l:"真航線 True Course 是一個航空新聞與知識媒體。"};
+    window.__PAGES__["know-ifr"]={t:"儀表飛行",s:"航空知識",k:"topic",l:"儀表飛行 — 相關文章整理中。"};
+    window.__PAGES__["shop"]={t:"航空商城",s:"商城",k:"page"};
+    window.__PAGECONTENT__["shop"]="<p>真航線 航空商城正在籌備中。</p><p>未來這裡會提供與飛行相關的嚴選商品:航空攝影作品、模型、周邊與學習資源等。</p><p>上線後會在這裡與電子報通知大家,敬請期待。</p>";
+    window.__TOPICLIST__["know-ifr"]=[{t:"儀表飛行入門:六大基本儀表怎麼看",slug:"know-ifr-a1",sec:"儀表飛行"},{t:"從 VFR 到 IFR:在雲裡飛行靠什麼",slug:"know-ifr-a2",sec:"儀表飛行"},{t:"進場程序與最低下降高度概念",slug:"know-ifr-a3",sec:"儀表飛行"}];
+    window.__TOPICLIST__["know-atc"]=[{t:"航管通訊入門:先掌握這幾個重點",slug:"know-atc-a1",sec:"航管通訊"},{t:"標準通話用語:聽懂塔台在說什麼",slug:"know-atc-a2",sec:"航管通訊"},{t:"從放行到落地:一趟航班的航管流程",slug:"know-atc-a3",sec:"航管通訊"}];
+    window.__TOPICLIST__["safety-crm"]=[{t:"人因工程入門:先掌握這幾個重點",slug:"safety-crm-a1",sec:"人因工程"},{t:"CRM 機組資源管理是什麼",slug:"safety-crm-a2",sec:"人因工程"},{t:"疲勞、注意力與人為疏失",slug:"safety-crm-a3",sec:"人因工程"}];
+    (function(){var P=window.__PAGES__,T=window.__TOPICLIST__;["know-ifr","know-atc","safety-crm"].forEach(function(k){(T[k]||[]).forEach(function(it){P[it.slug]={t:it.t,s:it.sec,k:"article"};});});})();
   /* ================= 全站設定:改這裡即可全站生效 ================= */
   // 導覽選單:要新增主題,只要在這裡加一行(或加一個區塊),全站每頁都會更新
   var NAV=[
-    {label:'航空新聞', items:[['全部新聞','news-all'],['產業動態','news-industry'],['飛行安全','news-safety'],['機場・航路','news-airport'],['法規更新','news-reg']]},
-    {label:'航空知識', items:[['飛行原理','know-aerodynamics'],['航路導航','know-navigation'],['機型解析','know-aircraft'],['航空氣象','know-weather'],['航管與航路','know-atc'],['學飛之路','know-training']]},
-    {label:'航空安全', items:[['事故與調查','safety-accident'],['安全觀念','safety-concept'],['人為因素 CRM','safety-crm'],['飛安法規','safety-reg']]},
-    {label:'航迷園地', items:[['航空攝影','fan-photography'],['機隊塗裝','fan-livery'],['航空活動','fan-events'],['模擬飛行','fan-sim']]},
-    {label:'關於本站', href:'about.html'}
+    {label:'航空新聞', items:[['全部新聞','news-all'],['產業動態','news-industry'],['飛行安全','news-safety'],['法規更新','news-reg']]},
+    {label:'航空知識', items:[['飛行原理','know-aerodynamics'],['航空氣象','know-weather'],['儀表飛行','know-ifr'],['航管通訊','know-atc'],['機型解析','know-aircraft']]},
+    {label:'航空安全', items:[['安全觀念','safety-concept'],['事故與調查','safety-accident'],['人因工程','safety-crm']]},
+    {label:'航迷園地', items:[['航空攝影','fan-photography'],['航空活動','fan-events'],['模擬飛行','fan-sim']]},
+    {label:'航空商城', slug:'shop'},
+    {label:'關於我們', slug:'about'}
   ];
   // 穩定版 METAR:貼上你的 Cloudflare Worker 網址即可改用(留空則自動用公開代理備援)
   // 例:window.METAR_WORKER='https://metar.你的名稱.workers.dev';
@@ -520,9 +528,9 @@ window.__PAGES__ = {"a-st-elmo":{"t":"飛機窗外的藍色火焰：什麼是聖
     var nav=document.getElementById('mainnav'); if(!nav) return;
     var h='';
     NAV.forEach(function(sec){
-      if(sec.href){ h+='<div class="navitem"><a class="navlink" href="'+sec.href+'">'+sec.label+'</a></div>'; return; }
+      if(sec.slug){ h+='<div class="navitem"><a class="navlink" href="#'+sec.slug+'">'+sec.label+'</a></div>'; return; }
       h+='<div class="navitem has-menu"><button class="navlink" aria-haspopup="true" aria-expanded="false">'+sec.label+' <span class="caret">\u25be</span></button><div class="dropdown" role="menu">';
-      sec.items.forEach(function(it){ h+='<a href="'+it[1]+'.html" role="menuitem">'+it[0]+'</a>'; });
+      sec.items.forEach(function(it){ h+='<a href="#'+it[1]+'" role="menuitem">'+it[0]+'</a>'; });
       h+='</div></div>';
     });
     nav.innerHTML=h;
