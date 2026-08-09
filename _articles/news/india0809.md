@@ -40,6 +40,7 @@ FCAS 的核心構想，是建立一套完整的系統。
 這也是第六代戰機與目前 Rafale、F-35、F-22 等第四代半或第五代戰機最大的概念差異之一。
 
 <img src="{{ '/assets/img/FCASPosterGOOSE.jpeg' | relative_url }}" alt="FCAS">
+<figure><img src="{{ '/assets/img/7370809.jpg' | relative_url }}"><figcaption>FCAS</figcaption></figure>
 
 ## 為什麼印度想加入？
 
