@@ -3,7 +3,7 @@ title: "印度可能加入法國第六代戰機計畫 巴黎迎來新的合作�
 section: news          # 大分類：news / knowledge / safety / fanzone
 category: industry           # 小分類代碼（見下表）
 date: 2026-08-10            # 日期，新的排前面
-thumb: /assets/img/你的圖.jpg   # 縮圖（可留空 "" ）
+thumb: /assets/img/FCASPosterGOOSE.jpeg   # 縮圖（可留空 "" ）
 excerpt: "全球第六代戰機競賽正在出現新的變化。印度正考慮加入由法國主導的下一代空中作戰系統計畫，尋求參與第六代戰機的共同研發與製造。"
 # featured: false            # 想當首頁封面故事就取消這行註解（同時只留一篇）
 ---
