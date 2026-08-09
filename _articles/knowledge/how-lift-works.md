@@ -15,7 +15,7 @@ thumb: /assets/img/20260810at122344AM.jpg
 
 ## 最大的誤會：上下兩團空氣根本不需要同時到達
 
-<figure><img src="{{ '/assets/img/20260810at122407AM.jpg' | relative_url }}"><figcaption>FAA推出針對5G的新規</figcaption></figure>
+<figure><img src="{{ '/assets/img/20260810at122407AM.jpg' | relative_url }}"></figure>
 
 傳統說法最大的問題，在於它偷偷加入了一個根本不存在的條件：從機翼前緣分開的兩團空氣，必須在機翼後緣重新相遇。
 
@@ -29,7 +29,7 @@ thumb: /assets/img/20260810at122344AM.jpg
 
 ## 升力真正的核心：壓力分布 Pressure Distribution
 
-<figure><img src="{{ '/assets/img/20260810at122344AM.jpg' | relative_url }}"><figcaption>FAA推出針對5G的新規</figcaption></figure>
+<figure><img src="{{ '/assets/img/20260810at122344AM.jpg' | relative_url }}"></figure>
 
 空氣是一種流體，而且具有壓力。當空氣接觸機翼表面時，壓力會垂直作用在機翼的每一個位置。如果我們把整個機翼表面受到的所有壓力全部加總起來，就會得到一個總空氣動力。其中垂直於相對風的部分，就是升力。
 
@@ -89,7 +89,7 @@ thumb: /assets/img/20260810at122344AM.jpg
 
 流體速度從零到自由流的速度這一層薄薄區域，就是邊界層。
 
-<figure><img src="{{ '/assets/img/velocities-in-boundary-layer.jpg' | relative_url }}"><figcaption>FAA推出針對5G的新規</figcaption></figure>
+<figure><img src="{{ '/assets/img/velocities-in-boundary-layer.jpg' | relative_url }}"></figure>
 
 ## 真正的升力，是整套流場共同作用的結果
 
