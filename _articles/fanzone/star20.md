@@ -3,7 +3,7 @@ title: "星悦航空歡慶開航20週年 推出限定星空飛行體驗"
 section: fanzone          # 大分類：news / knowledge / safety / fanzone
 category: events           # 小分類代碼（見下表）
 date: 2026-08-09            # 日期，新的排前面
-thumb: /assets/img/star20.jpg   # 縮圖（可留空 "" ）
+thumb: /assets/img/stay20.jpg   # 縮圖（可留空 "" ）
 excerpt: "一到兩句話的摘要，會顯示在首頁與清單。"
 # featured: true            # 想當首頁封面故事就取消這行註解（同時只留一篇）
 ---
@@ -12,7 +12,7 @@ excerpt: "一到兩句話的摘要，會顯示在首頁與清單。"
 
 日本航空公司星悦航空 (Star Flyer)為慶祝開航20週年，宣布與北九州市科學館合作，推出期間限定的天象館特別放映活動，帶領觀眾展開一場結合航空與宇宙的一夜星空之旅。
 
-<figure><img src="{{ '/assets/img/star20.jpg' | relative_url }}"><figcaption>《一夜限りのフライト ～翼がつなぐ星の世界～》</figcaption></figure>
+<figure><img src="{{ '/assets/img/stay20.jpg' | relative_url }}"><figcaption>《一夜限りのフライト ～翼がつなぐ星の世界～》</figcaption></figure>
 
 此次特別企劃名為《一夜限りのフライト ～翼がつなぐ星の世界～》（僅此一夜的飛行～雙翼連結星辰的世界～），將於2026年9月5日（星期六）晚間6時30分至7時15分舉行，地點位於北九州市科學館 Space LABO。活動採全席指定，並以事前預約優先方式受理報名。
 
