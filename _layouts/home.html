@@ -56,7 +56,7 @@ layout: default
 
 <section class="sec" id="safety">
   <div class="wrap">
-    <div class="sec-head reveal"><div class="l"><span class="wp">◇ WPT 03 · SAFETY</span><h2><span class="zh">航空安全</span>Aviation Safety</h2></div><a class="more" href="{{ '/safety/' | relative_url }}">全部文章 →</a></div>
+    <div class="sec-head reveal"><div class="l"><span class="wp">◇ WPT 03 · SAFETY</span><h2><span class="zh">航空安全</span>Aviation Safety</h2>
     <div class="news" id="safetygrid">
       {% assign safetylist = site.articles | where: "section", "safety" | sort: "date" | reverse %}
       {% for a in safetylist limit: 3 %}{% assign c = site.data.tax.categories[a.category] %}
