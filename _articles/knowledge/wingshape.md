@@ -1,5 +1,5 @@
 ---
-title: "機翼的形狀學:從矩形翼到後掠翼,每一種平面形狀在解決什麼問題?"
+title: "機翼的形狀學：從矩形翼到後掠翼，每一種平面形狀在解決什麼問題?"
 section: knowledge          # 大分類：news / knowledge / safety / fanzone
 category: aircraft           # 小分類代碼（見下表）
 date: 2026-08-19            # 日期，新的排前面
