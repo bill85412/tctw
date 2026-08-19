@@ -51,4 +51,16 @@ layout: default
     </div>
   </div>
 </section>
+
+<section class="sec" id="safety">
+  <div class="wrap">
+    <div class="sec-head reveal"><div class="l"><span class="wp">◇ WPT 03 · SAFETY</span><h2><span class="zh">航空安全</span>Safety &amp; Human Factors</h2></div><a class="more" href="{{ '/safety/' | relative_url }}">全部安全文章 →</a></div>
+    <div class="news" id="safetygrid">
+      {% assign safetylist = site.articles | where: "section", "safety" | sort: "date" | reverse %}
+      {% for a in safetylist limit: 2 %}{% assign c = site.data.tax.categories[a.category] %}
+      <article class="card reveal" data-cat="{{ a.category }}"><a class="cardlink" href="{{ a.url | relative_url }}" aria-label="{{ a.title }}"></a><div class="strip-head"><span class="tag">{{ a.category | upcase }}</span><span>{{ c.label | default: a.category }}</span></div><div class="body"><h3>{{ a.title }}</h3><p>{{ a.excerpt }}</p><div class="foot"><span>DEP · {{ c.label | default: a.category }}</span></div></div></article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
 </div>
