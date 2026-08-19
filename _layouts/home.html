@@ -47,7 +47,7 @@ layout: default
     <div class="sec-head reveal"><div class="l"><span class="wp">◇ WPT 02 · LEARN</span><h2><span class="zh">航空知識</span>Aviation Knowledge</h2></div></div>
     <div class="know">
       {% assign knlist = site.articles | where: "section", "knowledge" | sort: "date" | reverse %}
-      {% for a in knlist limit: 5 %}{% assign c = site.data.tax.categories[a.category] %}
+      {% for a in knlist limit: 6 %}{% assign c = site.data.tax.categories[a.category] %}
       <a class="krow reveal" href="{{ a.url | relative_url }}"><span class="kicon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 3v4M12 17v4M3 12h4M17 12h4"/></svg></span><span class="kbody"><div class="cat">{{ a.category | upcase }}</div><h3>{{ a.title }}</h3><p>{{ a.excerpt }}</p></span></a>
       {% endfor %}
     </div>
