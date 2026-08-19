@@ -263,7 +263,7 @@
   }
 
   /* ── 多頁面 / 文章版型 ── */
-  .page{max-width:820px;margin:0 auto;padding:44px 24px 64px}
+  .page{max-width:var(--wrap);margin:0 auto;padding:44px 24px 64px}
   .crumb{font-family:var(--font-mono);font-size:12px;color:var(--faint);margin-bottom:20px;display:flex;gap:8px;flex-wrap:wrap}
   .crumb a{color:var(--dim)} .crumb a:hover{color:var(--gold)}
   .page .kicker{margin-bottom:12px}
