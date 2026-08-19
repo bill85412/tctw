@@ -7,9 +7,8 @@ lang: zh-Hant
 metar_worker: "https://metar.bill85412.workers.dev"
 
 # ── baseurl 設定（很重要）──
-# repo 是「帳號.github.io」        → baseurl 留空（保持下面這行）
-# repo 是「帳號.github.io/專案名」 → 改成 baseurl: "/專案名"
-baseurl: "/truecourse.tw"
+url: "https://www.truecourse.tw"
+baseurl: ""
 
 # 文章集合：原始檔放在 _articles/<分類>/，網址自動變成 /<分類>/<檔名>/
 collections:
