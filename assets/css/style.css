@@ -34,7 +34,6 @@
 
   /* ── 座艙資料條 ─────────────────────────── */
   .strip{
-    border-bottom:1px solid var(--line);
     background:linear-gradient(var(--bg-2),var(--bg));
     font-family:var(--font-mono);font-size:12px;letter-spacing:.04em;
   }
