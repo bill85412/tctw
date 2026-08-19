@@ -331,3 +331,7 @@
   .article-body .poem{color:var(--text);font-size:16.5px;line-height:2.15;letter-spacing:.03em;margin:20px 0 0;padding:6px 0 26px;border-bottom:1px solid var(--line)}
   .article-body .poem p{margin:0 0 18px}
   .article-body .poem p:last-child{margin-bottom:0}
+/* ── 關於我們頁 ── */
+.page:has(.story) .kicker{display:none}
+.page:has(.story) h1{text-align:center}
+.article-body .poem p{text-align:center}
