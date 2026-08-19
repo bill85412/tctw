@@ -326,7 +326,7 @@
   .ad-slot{margin:0 auto;max-width:728px;min-height:90px;display:flex;align-items:center;justify-content:center;border:1px dashed var(--line-strong);border-radius:12px;background:rgba(122,163,214,.04);color:var(--faint);font-family:var(--font-mono);font-size:12px;text-align:center}
   .ad-slot ins,.ad-slot img,.ad-slot iframe{max-width:100%;display:block}
   @media(max-width:760px){.ad-slot{max-width:336px;min-height:250px}}
-  .article-body p,.ts-body p,.lede,.page .lede{text-wrap:pretty}
+  .article-body p,.lede,.page .lede{text-align:justify}
   .article-body .story{text-align:center}
   .article-body .poem{color:var(--text);font-size:16.5px;line-height:2.15;letter-spacing:.03em;margin:20px 0 0;padding:6px 0 26px;border-bottom:1px solid var(--line)}
   .article-body .poem p{margin:0 0 18px}
