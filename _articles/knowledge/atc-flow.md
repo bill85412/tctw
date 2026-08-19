@@ -155,7 +155,7 @@ Tower 將飛機交給Ground負責Taxi to Gate
 
 每一個管制席位都有自己的「責任範圍」。當飛機離開一個管制單位的責任範圍，就會Handoff，也就是把飛機交給下一個管制單位。
 
-因此你在無線電裡經常聽到**“Contact Departure.”**或“Contact Center.”**，這不是單純叫飛行員換頻率。
+因此你在無線電裡經常聽到**“Contact Departure.”** 或 **“Contact Center.”**，這不是單純叫飛行員換頻率。
 
 它代表的是：「從現在開始，你進入另一個管制單位的責任範圍」
 
