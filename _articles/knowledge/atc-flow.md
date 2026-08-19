@@ -158,3 +158,4 @@ Tower 將飛機交給Ground負責Taxi to Gate
 因此你在無線電裡經常聽到**“Contact Departure.”**或“Contact Center.”**，這不是單純叫飛行員換頻率。
 
 它代表的是：「從現在開始，你進入另一個管制單位的責任範圍」
+
