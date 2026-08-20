@@ -8,6 +8,7 @@ excerpt: "地轉風是大氣高空風場的重要概念，當氣壓梯度力與�
 description: "地轉風（Geostrophic Wind）主要存在於地球大氣的摩擦層（friction layer）以上，是由氣壓梯度力（Pressure Gradient Force, PGF）與科氏力（Coriolis Force）相互平衡所形成的風"
 image: /assets/img/geowind.jpg   # 分享到社群時的預覽圖，通常填跟 thumb 一樣
 # featured: true            # 想當首頁封面故事就取消這行註解（同時只留一篇）
+---
 
 ## 地轉風（Geostrophic Wind）
 
