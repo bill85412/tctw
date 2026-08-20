@@ -30,7 +30,7 @@ image: /assets/img/ilsphoto.jpg   # 分享到社群時的預覽圖，通常填�
 
 <figure><img src="{{ '/assets/img/loc.jpg' | relative_url }}"><figcaption>定位台 (Localizer, LOC)</figcaption></figure>
 
-***滑降台 (Glideslope, GS) —— 下滑角度**
+**滑降台 (Glideslope, GS) —— 下滑角度**
 
 滑降台的天線裝在**跑道進場端附近、偏跑道一側**，離跑道頭約 1,000 英尺，畫出理想的下滑道。
 
