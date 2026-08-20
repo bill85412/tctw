@@ -1,5 +1,5 @@
 ---
-title: "儀器降落系統 (Instrument Landing System, ILS)"
+title: "儀器降落系統 Instrument Landing System, ILS"
 section: knowledge          # 大分類：news / knowledge / safety / fanzone
 category: ifr           # 小分類代碼（見下表）
 date: 2026-08-20            # 日期，新的排前面
