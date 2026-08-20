@@ -105,6 +105,9 @@ ILS 依可用的決斷高度 (DH) 與跑道視程 (RVR) 分級，分級越高，
 
 越往下走，越依賴機載自動落地與地面訊號的高完整度，這也是 CAT II/III 對臨界區保護、燈光與機隊裝備都有額外規定的原因。
 
+<div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;"><iframe src="https://www.youtube.com/embed/V0OJ-rPDXNs?si=3ccZcOGJxqsfKqFy" title="ILS Autoland" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;" allowfullscreen></iframe></div>
+
+
 ## 限制與陷阱
 
 ILS 精確但不是萬能。它易受**地形與反射面影響**：附近大型建物、地形，或進入 **ILS 臨界區 (ILS Critical Area)** 的航機車輛，都可能讓航道彎曲 (Course Bends) —— 這也是低能見度、特別是 CAT II/III 運行時，塔台嚴格管制臨界區進出的原因。加上前述的**假下滑道**，以及訊號在很靠近天線時本就不穩，實務上都會用指點標、DME 或 GPS 高度交叉檢查，絕不單靠一針走到底。
