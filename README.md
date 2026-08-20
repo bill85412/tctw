@@ -1,6 +1,4 @@
-# 真航線 True Course
-
-航空新聞・飛行知識・機型解析。使用 [Jekyll](https://jekyllrb.com/)，由 GitHub Pages 自動建置。
+使用 [Jekyll](https://jekyllrb.com/)，由 GitHub Pages 自動建置。
 
 ## 這個網站怎麼運作
 
