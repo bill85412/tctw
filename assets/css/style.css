@@ -344,3 +344,12 @@
   padding-top: 0;
   margin-top: 0;
 }
+
+
+/* ── 文章表格 ── */
+.article-body table{width:100%;border-collapse:collapse;margin:24px 0 28px;font-size:15px;line-height:1.75}
+.article-body th{text-align:left;font-weight:700;color:var(--text);padding:10px 14px 12px;border-bottom:1px solid var(--line-strong);vertical-align:bottom}
+.article-body td{text-align:left;color:#cdd8e6;padding:14px;border-bottom:1px solid var(--line);vertical-align:top}
+.article-body th:first-child,.article-body td:first-child{padding-left:0}
+.article-body th:last-child,.article-body td:last-child{padding-right:0}
+@media(max-width:560px){.article-body table{font-size:13.5px}.article-body th,.article-body td{padding:10px 8px}}
