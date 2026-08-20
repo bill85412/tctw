@@ -9,6 +9,14 @@ metar_worker: "https://metar.bill85412.workers.dev"
 # ── baseurl 設定（很重要）──
 url: "https://www.truecourse.tw"
 baseurl: ""
+locale: zh_TW
+timezone: Asia/Taipei
+logo: /assets/img/logo-dark.png
+
+# ── SEO：自動產生 meta/OG/JSON-LD 與 sitemap.xml ──
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
 
 # 文章集合：原始檔放在 _articles/<分類>/，網址自動變成 /<分類>/<檔名>/
 collections:

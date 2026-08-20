@@ -7,6 +7,8 @@ date: 2026-08-08
 thumb: /assets/img/st-elmos-fire.jpg
 featured: true
 excerpt: "夜間飛行時，擋風玻璃或翼尖偶爾會浮現跳動的藍紫色光芒。它不是起火，而是一種叫「聖艾爾摩之火」的電暈放電，也是強烈大氣電場的警訊。"
+description: "飛機擋風玻璃與翼尖的藍紫色光芒是什麼？聖艾爾摩之火（St. Elmo's Fire）其實是電暈放電，也是強烈大氣電場的警訊。成因與安全性完整解析。"
+image: /assets/img/st-elmos-fire.jpg
 ---
 <p>在夜間飛行時，飛行員鮮少會看到飛機的擋風玻璃、翼尖或螺旋槳周圍出現藍紫色的光芒。這些光線有時像火焰般跳動，有時則像細小的電流沿著玻璃表面蔓延。雖然畫面看起來神祕，甚至有些令人不安，但它並不代表飛機真的起火，而是一種被稱為 St. Elmo’s Fire (聖艾爾摩之火) 的自然放電現象。</p>
 <figure><img src="{{ '/assets/img/st-elmos-fire.jpg' | relative_url }}" alt="聖艾爾摩之火 St. Elmo's Fire" loading="lazy"><figcaption>圖片來源:<a href="https://www.aviationfile.com/" target="_blank" rel="noopener">aviationfile.com</a></figcaption></figure>

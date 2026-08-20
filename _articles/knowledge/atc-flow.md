@@ -6,6 +6,8 @@ date: 2026-08-19            # 日期，新的排前面
 thumb: /assets/img/atc.jpg   # 縮圖（可留空 "" ）
 excerpt: "「Cleared for takeoff」 「Contact Departure」 「Contact Center」對飛行員來說，這些都是非常熟悉的無線電通話。但對一般人而言，可能會產生一個問題：到底誰在管這架飛機？"
 # featured: true            # 想當首頁封面故事就取消這行註解（同時只留一篇）
+description: "航管（ATC）到底在做什麼？從 Ground、Tower、Departure 到 Center，帶你看一架飛機從滑行到落地，各管制席位如何接力指揮。"
+image: /assets/img/atc.jpg
 ---
 
 「Cleared for takeoff」 「Contact Departure」 「Contact Center」

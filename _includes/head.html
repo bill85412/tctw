@@ -1,7 +1,6 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-{% if page.title %}<title>{{ page.title }} — {{ site.title }}</title>{% else %}<title>{{ site.title }} — {{ site.tagline }}</title>{% endif %}
-<meta name="description" content="{{ page.excerpt | default: site.description | strip_html | truncate: 150 }}">
+{% seo %}
 <link rel="icon" type="image/png" href="{{ '/assets/img/favicon.png' | relative_url }}">
 <link rel="apple-touch-icon" href="{{ '/assets/img/logo-dark.png' | relative_url }}">
 <link rel="preconnect" href="https://fonts.googleapis.com">

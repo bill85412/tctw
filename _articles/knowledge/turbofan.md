@@ -6,6 +6,8 @@ date: 2026-08-18            # 日期，新的排前面
 thumb: /assets/img/ge90.jpg   # 縮圖（可留空 "" ）
 excerpt: "飛機為什麼能夠飛上天空？如果把問題一路追溯到最根本，我們會發現，飛機的速度、航程、爬升能力與載重能力，都與一個核心系統密不可分——航空發動機（Aircraft Engine）"
 # featured: true            # 想當首頁封面故事就取消這行註解（同時只留一篇）
+description: "Turbojet、Turbofan、Turboprop、Turboshaft 差在哪？一次搞懂四種航空發動機的原理、優缺點與適用機型。"
+image: /assets/img/ge90.jpg
 ---
 
 現代航空器使用的發動機種類很多，但如果聚焦在燃氣渦輪發動機（Gas Turbine Engine），最重要的四種類型就是：
