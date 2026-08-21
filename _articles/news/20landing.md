@@ -1,7 +1,7 @@
 ---
 title: "「20萬次降落」里程碑！喬治華盛頓號航母完成第20萬架次降落"
 section: news          # 大分類：news / knowledge / safety / fanzone
-category: industry           # 小分類代碼（見下表）
+category: military           # 小分類代碼（見下表）
 date: 2026-08-21            # 日期，新的排前面
 author: "Bill Lin"       # 作者名字，可改成自己的名字或筆名；刪掉這行或留空 "" 會顯示「真航線編輯部」
 thumb: /assets/img/200k.jpg   # 縮圖（可留空 "" ）
