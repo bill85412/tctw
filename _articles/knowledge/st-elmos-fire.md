@@ -4,6 +4,7 @@ section: knowledge
 category: weather
 kicker: "航空氣象 · WEATHER"
 date: 2026-08-08
+author: "Bill Lin"
 thumb: /assets/img/st-elmos-fire.jpg
 featured: true
 excerpt: "夜間飛行時，擋風玻璃或翼尖偶爾會浮現跳動的藍紫色光芒。它不是起火，而是一種叫「聖艾爾摩之火」的電暈放電，也是強烈大氣電場的警訊。"
