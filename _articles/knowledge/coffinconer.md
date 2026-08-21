@@ -1,3 +1,16 @@
+---
+title: "你的文章標題"
+section: knowledge          # 大分類：news / knowledge / safety / fanzone
+category: weather           # 小分類代碼（見下表）
+date: 2026-08-21            # 日期，新的排前面
+author: "真航線編輯部"       # 作者名字，可改成自己的名字或筆名；刪掉這行或留空 "" 會顯示「真航線編輯部」
+thumb: /assets/img/你的圖.jpg   # 縮圖（可留空 "" ）
+excerpt: "一到兩句話的摘要，會顯示在首頁與清單。"
+description: "給搜尋引擎看的摘要（SEO），50~80字，塞入讀者會搜尋的關鍵字。"
+image: /assets/img/你的圖.jpg   # 分享到社群時的預覽圖，通常填跟 thumb 一樣
+# featured: true            # 想當首頁封面故事就取消這行註解（同時只留一篇）
+---
+
 # 棺材角(Coffin Corner)
 
 ## 高空中那個只剩一種速度的角落
