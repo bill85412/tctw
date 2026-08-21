@@ -3,6 +3,7 @@ title: "什麼是地轉風（Geostrophic Wind）？氣壓梯度力與科氏力�
 section: knowledge          # 大分類：news / knowledge / safety / fanzone
 category: weather           # 小分類代碼（見下表）
 date: 2026-08-20            # 日期，新的排前面
+author: "Bill Lin"
 thumb: /assets/img/geowind.jpg   # 縮圖（可留空 "" ）
 excerpt: "地轉風是大氣高空風場的重要概念，當氣壓梯度力與科氏力達到平衡時，風便會沿著等壓線吹行。本文將介紹地轉風的形成原理、氣壓梯度力、科氏力，以及 Buys-Ballot 定律，帶你理解高空風場為何會如此運動"
 description: "地轉風（Geostrophic Wind）主要存在於地球大氣的摩擦層（friction layer）以上，是由氣壓梯度力（Pressure Gradient Force, PGF）與科氏力（Coriolis Force）相互平衡所形成的風"
