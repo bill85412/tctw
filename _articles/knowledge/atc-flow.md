@@ -3,6 +3,7 @@ title: "航管在幹嘛？"
 section: knowledge          # 大分類：news / knowledge / safety / fanzone
 category: atc           # 小分類代碼（見下表）
 date: 2026-08-19            # 日期，新的排前面
+author: "Bill Lin"
 thumb: /assets/img/atc.jpg   # 縮圖（可留空 "" ）
 excerpt: "「Cleared for takeoff」 「Contact Departure」 「Contact Center」對飛行員來說，這些都是非常熟悉的無線電通話。但對一般人而言，可能會產生一個問題：到底誰在管這架飛機？"
 # featured: true            # 想當首頁封面故事就取消這行註解（同時只留一篇）
