@@ -3,6 +3,7 @@ title: "一份事故調查報告怎麼讀?以NTSB報告WPR24FA004為例"
 section: safety          # 大分類：news / knowledge / safety / fanzone
 category: accident           # 小分類代碼（見下表）
 date: 2026-08-19            # 日期，新的排前面
+author: "Bill Lin"
 thumb: /assets/img/report.jpg   # 縮圖（可留空 "" ）
 excerpt: "對飛行員、航空系學生,乃至一般航空愛好者來說,事故調查報告是最珍貴的學習材料之一。它不是聳動的新聞報導,而是經過嚴謹採證、還原飛行軌跡、交叉比對數據後,盡可能重建「當下究竟發生了什麼事」的技術文件"
 # featured: true            # 想當首頁封面故事就取消這行註解（同時只留一篇）
