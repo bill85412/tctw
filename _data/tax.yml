@@ -5,6 +5,7 @@ sections:
   fanzone: { label: 航迷園地 }
 categories:
   industry: { label: 產業動態, section: news }
+  military: { label: 軍事要聞, section: news }
   safety: { label: 飛行安全, section: news }
   reg: { label: 法規更新, section: news }
   aerodynamics: { label: 飛行原理, section: knowledge }
