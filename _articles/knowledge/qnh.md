@@ -3,6 +3,7 @@ title: "一次搞懂QNH、QFE、QNE到底是什麼？"
 section: knowledge          # 大分類：news / knowledge / safety / fanzone
 category: ifr           # 小分類代碼（見下表）
 date: 2026-08-17            # 日期，新的排前面
+author: "Bill Lin"
 thumb: /assets/img/qnh.jpg   # 縮圖（可留空 "" ）
 excerpt: "「高度」並不只是高度計上顯示的一個數字。高度計其實是利用大氣壓力來推算高度，因此我們必須先告訴高度計：「你要把哪一個壓力面當作高度基準？」這就是 QNH、QFE 和 QNE 的用途"
 # featured: true            # 想當首頁封面故事就取消這行註解（同時只留一篇）
