@@ -57,7 +57,7 @@ Q-Code 在現代航空最無可取代的角色，是**高度表的氣壓撥定 (
 
 一個好記的關係：**QDM 對 Station、QDR 從 Station，兩者互為反方向；把「磁」換成「真」就成了 QUJ 與 QTE。**
 
-<figure><img src="{{ '/assets/img/qcodenav.jpg.jpg' | relative_url }}"><figcaption>Q-Code Navigation</figcaption></figure>
+<figure><img src="{{ '/assets/img/qcodenav.jpg' | relative_url }}"><figcaption>Q-Code Navigation</figcaption></figure>
 
 ## 從電報時代活到今天的其他 Q-Code
 
@@ -71,8 +71,4 @@ Q-Code 在現代航空最無可取代的角色，是**高度表的氣壓撥定 (
 
 Q 碼是一套為摩斯電碼而生、以「Q + 兩字母」壓縮整句話的通用簡碼，靠簡短與語言中立跨越了語言與時代。它的碼段依航空、海事、通用切分，而航空最核心的遺產，就是高度表的三個撥定基準 —— **QNH、QFE、QNE**。
 
-<figure><img src="{{ '/assets/img/檔名.jpg' | relative_url }}"><figcaption>圖片說明</figcaption></figure>
 
-放 YouTube 影片（把 影片ID 換成影片網址 watch?v= 後面那串）：
-
-<div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;"><iframe src="https://www.youtube.com/embed/影片ID" title="影片標題" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;" allowfullscreen></iframe></div>
