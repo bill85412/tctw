@@ -3,6 +3,7 @@ title: "機翼的形狀學：從矩形翼到後掠翼，每一種平面形狀在
 section: knowledge          # 大分類：news / knowledge / safety / fanzone
 category: aircraft           # 小分類代碼（見下表）
 date: 2026-08-19            # 日期，新的排前面
+author: "Bill Lin"
 thumb: /assets/img/sweep.jpg   # 縮圖（可留空 "" ）
 excerpt: "站在停機坪上看飛機，最容易辨認的差異往往就是機翼：輕航機的機翼方方正正、幾乎沒有角度；客機的機翼向後斜掠出漂亮的弧度；戰鬥機的機翼短而寬，前緣還帶著奇怪的折角。這些形狀不是設計師的美學偏好，而是一連串物理妥協的產物"
 # featured: true            # 想當首頁封面故事就取消這行註解（同時只留一篇）
