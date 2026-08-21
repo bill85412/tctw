@@ -3,6 +3,7 @@ title: "FAA公布雷達高度計新規 將全面提升抗5G干擾能力"
 section: news          # 大分類：news / knowledge / safety / fanzone
 category: reg           # 小分類代碼（見下表）
 date: 2026-08-09            # 日期，新的排前面
+author: "Bill Lin"
 thumb: /assets/img/faalogocnn.jpg   # 縮圖（可留空 "" ）
 excerpt: "FAA正式公布新的法規，要求未來在美國本土主要空域飛行、且裝有雷達高度計的航空器，逐步換裝或升級為具備更高抗無線電干擾能力的系統"
 # featured: true            # 想當首頁封面故事就取消這行註解（同時只留一篇）
