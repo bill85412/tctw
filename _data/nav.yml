@@ -2,6 +2,7 @@
   items:
     - { t: 全部新聞, url: /news/ }
     - { t: 產業動態, url: /news/industry/ }
+    - { t: 軍事要聞, url: /news/military/ }
     - { t: 飛行安全, url: /news/safety/ }
     - { t: 法規更新, url: /news/reg/ }
 - label: 航空知識
