@@ -21,7 +21,7 @@ layout: default
       <div class="ts-side-head">最新文章 · LATEST</div>
     <div class="ts-side-list">
       {% assign picks = latest | where_exp: "a", "a.url != featured.url" %}
-      {% for a in picks %}{% assign pc = site.data.tax.categories[a.category] %}
+      {% for a in picks limit: 5 %}{% assign pc = site.data.tax.categories[a.category] %}
       <a class="ts-item" href="{{ a.url | relative_url }}"><span class="m">{{ pc.label | default: a.category }} · {{ a.date | date: "%Y/%m/%d" }}</span><h3>{{ a.title }}</h3></a>
     {% endfor %}
     </div>
