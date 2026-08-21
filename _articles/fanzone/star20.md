@@ -3,6 +3,7 @@ title: "星悦航空歡慶開航20週年 推出限定星空飛行體驗"
 section: fanzone          # 大分類：news / knowledge / safety / fanzone
 category: events           # 小分類代碼（見下表）
 date: 2026-08-09            # 日期，新的排前面
+author: "Bill Lin"
 thumb: /assets/img/stay20.jpg   # 縮圖（可留空 "" ）
 excerpt: "星悅航空為慶祝開航20週年，與北九州市科學館合作推出期間限定天象館放映，帶觀眾展開結合航空與宇宙的一夜星空飛行。"
 # featured: true            # 想當首頁封面故事就取消這行註解（同時只留一篇）
