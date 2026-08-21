@@ -3,6 +3,7 @@ title: "一次搞懂四種航空發動機：Turbojet、Turbofan、Turboprop、Tu
 section: knowledge          # 大分類：news / knowledge / safety / fanzone
 category: aircraft           # 小分類代碼（見下表）
 date: 2026-08-18            # 日期，新的排前面
+author: "Bill Lin"
 thumb: /assets/img/ge90.jpg   # 縮圖（可留空 "" ）
 excerpt: "飛機為什麼能夠飛上天空？如果把問題一路追溯到最根本，我們會發現，飛機的速度、航程、爬升能力與載重能力，都與一個核心系統密不可分——航空發動機（Aircraft Engine）"
 # featured: true            # 想當首頁封面故事就取消這行註解（同時只留一篇）
