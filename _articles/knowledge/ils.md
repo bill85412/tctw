@@ -3,6 +3,7 @@ title: "儀器降落系統 Instrument Landing System, ILS"
 section: knowledge          # 大分類：news / knowledge / safety / fanzone
 category: ifr           # 小分類代碼（見下表）
 date: 2026-08-20            # 日期，新的排前面
+author: "Bill Lin"
 thumb: /assets/img/ilsphoto.jpg   # 縮圖（可留空 "" ）
 excerpt: "儀器降落系統是目前最普遍的精確進場(Precision Approach)輔助。所謂「精確」，在於它同時提供左右與上下的引導，讓飛行員即使看不到跑道，也能沿著一條固定的下滑道飛到接地帶附近"
 description: "儀器降落系統是目前最普遍的精確進場(Precision Approach)輔助。所謂「精確」，在於它同時提供左右與上下的引導 (Lateral / Vertical Guidance)，讓飛行員即使看不到跑道，也能沿著一條固定的下滑道飛到接地帶附近"
