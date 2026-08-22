@@ -113,7 +113,5 @@ $$V_{s,n} = V_{s,1g}\sqrt{n}$$
 
 棺材角的本質，是兩條邊界在高空相遇，兩者收斂之處，可用速度帶歸零，而且兩個改正方向互相矛盾，高空環境又雪上加霜。真正的防線不在「能爬多高」，而在留足裕度、溫和操作、並認得那兩種手感相似卻成因相反的抖振。
 
-放 YouTube 影片（把 影片ID 換成影片網址 watch?v= 後面那串）：
-
 <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;"><iframe src="https://www.youtube.com/embed/oP08ltFnMu0?si=mpL9X80cBAf9Vdb7" title="
 How Coffin Corner Can Endanger High-Altitude Flight" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;" allowfullscreen></iframe></div>
