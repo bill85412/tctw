@@ -1,7 +1,7 @@
 ---
 title: "印度可能加入法國第六代戰機計畫 巴黎迎來新的合作夥伴？"
 section: news          # 大分類：news / knowledge / safety / fanzone
-category: industry           # 小分類代碼（見下表）
+category: military           # 小分類代碼（見下表）
 date: 2026-08-09            # 日期，新的排前面
 author: "Bill Lin"
 thumb: /assets/img/FCASPosterGOOSE.jpeg   # 縮圖（可留空 "" ）
