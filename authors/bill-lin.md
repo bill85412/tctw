@@ -1,0 +1,18 @@
+---
+layout: author
+title: Bill Lin
+author_name: "Bill Lin"          # 必須和文章 front matter 的 author 一致
+avatar: /assets/img/bill-lin.jpg # 大頭照:把照片上傳到 assets/img/bill-lin.jpg 就會顯示;還沒上傳前會顯示預設頭像
+role: 真航線 True Course 創辦人   # 頭銜,可自行修改或刪除這行
+permalink: /author/bill-lin/
+---
+
+<!-- ↓↓↓ 以下是佔位文字,請自行修改成真正的經歷 ↓↓↓ -->
+
+Bill Lin 是真航線 True Course 的創辦人與主筆,長期關注航空新聞、飛行知識與飛航安全議題,希望用看得懂的方式,把飛行的世界說清楚。
+
+## 經歷
+
+- (佔位)飛行訓練/航空相關經歷,請自行修改
+- (佔位)寫作與媒體經歷,請自行修改
+- (佔位)其他想放的經歷,請自行修改
