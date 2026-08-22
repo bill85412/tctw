@@ -29,7 +29,7 @@ $$L = \tfrac{1}{2}\rho V^2 S\,C_L = W$$
 
 $$V_{s,\text{TAS}} = \sqrt{\dfrac{2W}{\rho S\,C_{L\max}}}$$
 
-## 高速端 —— 震波抖振 (Shock Wave Buffeting)
+### 高速端 —— 震波抖振 (Shock Wave Buffeting)
 
 當飛機接近臨界馬赫數 (Critical Mach number, \(M_{cr}\))，機翼上表面局部氣流先達到音速，產生震波 (Shock Wave)並誘發氣流分離導致震波失速 (Shock Stall)。這條高速邊界本質上是一個幾乎固定的馬赫數，即最大操作馬赫數 $M_{MO}$。
 
