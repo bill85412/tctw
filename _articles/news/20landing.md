@@ -17,7 +17,7 @@ image: /assets/img/你的圖.jpg   # 分享到社群時的預覽圖，通常填�
 
 <figure><img src="{{ '/assets/img/200k.jpg' | relative_url }}"><figcaption>喬治華盛頓號第20萬次降落</figcaption></figure>
 
-## 從 F-14 到 F-35C，美國航空母鑑見證世代交替
+## 從 F-14 到 F-35C，美國航空母艦見證世代交替
 
 喬治華盛頓號於1992年7月4日正式服役，至今已經服役超過34年。在這段期間，美國海軍艦載航空兵力歷經重了大世代轉換。
 
