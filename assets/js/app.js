@@ -8,22 +8,41 @@
     el.textContent=pad(d.getUTCHours())+':'+pad(d.getUTCMinutes())+':'+pad(d.getUTCSeconds())+'Z';}
   tickZulu();setInterval(tickZulu,1000);
 
-  // METAR:Worker 優先 + 公開代理備援 + 本機快取(失敗顯示最近已知),每 15 分鐘更新
-  function loadMetar(){
-    var el=document.getElementById('metar');if(!el)return;var KEY='tc_metar_rctp';
-    try{var c=localStorage.getItem(KEY);if(c){var o=JSON.parse(c);if(o&&o.raw){el.textContent=o.raw;el.title=o.raw;}}}catch(e){}
-    var target='https://aviationweather.gov/api/data/metar?ids=RCTP&format=raw';var srcs=[];
-    if(window.METAR_WORKER){srcs.push(window.METAR_WORKER+(window.METAR_WORKER.indexOf('?')>-1?'&':'?')+'ids=RCTP');}
+  // METAR:RCTP / RCSS 每 15 秒輪流顯示;資料每 15 分鐘更新一次
+  // Worker 優先 + 公開代理備援 + 本機快取(失敗顯示最近已知)
+  var METAR_IDS=['RCTP','RCSS'];
+  var metarStore={};
+  var metarIdx=0;
+  function metarShow(txt){
+    var el=document.getElementById('metar');if(!el||!txt)return;
+    if(el.textContent===txt)return;
+    el.style.transition='opacity .25s ease';el.style.opacity='0';
+    setTimeout(function(){el.textContent=txt;el.title=txt;el.style.opacity='1';},250);
+  }
+  function metarRender(){
+    var avail=METAR_IDS.filter(function(id){return metarStore[id];});
+    if(!avail.length)return;
+    metarIdx=metarIdx%avail.length;
+    metarShow(metarStore[avail[metarIdx]]);
+  }
+  function metarLoad(id){
+    var KEY='tc_metar_'+id.toLowerCase();
+    if(!metarStore[id]){try{var c=localStorage.getItem(KEY);if(c){var o=JSON.parse(c);if(o&&o.raw){metarStore[id]=o.raw;metarRender();}}}catch(e){}}
+    var target='https://aviationweather.gov/api/data/metar?ids='+id+'&format=raw';var srcs=[];
+    if(window.METAR_WORKER){srcs.push(window.METAR_WORKER+(window.METAR_WORKER.indexOf('?')>-1?'&':'?')+'ids='+id);}
     srcs.push('https://api.codetabs.com/v1/proxy/?quest='+encodeURIComponent(target));
     srcs.push('https://api.allorigins.win/raw?url='+encodeURIComponent(target));
     (function attempt(i){if(i>=srcs.length)return;
       fetch(srcs[i],{cache:'no-store'}).then(function(r){if(!r.ok)throw 0;return r.text();})
-      .then(function(t){t=(t||'').trim();
-        if(t&&t.indexOf('RCTP')>-1){el.textContent=t;el.title=t;try{localStorage.setItem(KEY,JSON.stringify({raw:t,ts:Date.now()}));}catch(e){}}
+      .then(function(t){t=(t||'').trim();var line=null;
+        t.split(/\r?\n/).forEach(function(s){s=s.trim();if(!line&&s.indexOf(id)>-1)line=s;});
+        if(line){metarStore[id]=line;try{localStorage.setItem(KEY,JSON.stringify({raw:line,ts:Date.now()}));}catch(e){}metarRender();}
         else{throw 0;}})
       .catch(function(){attempt(i+1);});})(0);
   }
-  loadMetar();setInterval(loadMetar,900000);
+  function metarLoadAll(){METAR_IDS.forEach(function(id){metarLoad(id);});}
+  metarLoadAll();setInterval(metarLoadAll,900000);
+  setInterval(function(){metarIdx++;metarRender();},15000);
 
   // 手機漢堡選單
   var header=document.querySelector('header.nav');
