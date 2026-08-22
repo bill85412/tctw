@@ -1,0 +1,8 @@
+# ── 作者資料檔 ──
+# key 必須和文章 front matter 裡的 author 名稱一模一樣。
+# 有登記在這裡的作者,文章頁的作者名字會自動變成連結,指向 /author/<slug>/。
+# 新增作者時:在這裡加一筆,並在 authors/ 資料夾新增對應的 <slug>.md 頁面。
+
+"Bill Lin":
+  slug: bill-lin
+  avatar: /assets/img/bill-lin.jpg
