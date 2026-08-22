@@ -5,11 +5,14 @@ layout: default
 <main class="page">
   <div class="crumb"><a href="{{ '/' | relative_url }}">首頁</a>{% if sec %} <span>/</span> <span>{{ sec.label }}</span>{% endif %}{% if cat %} <span>/</span> <a href="{{ '/' | append: page.section | append: '/' | append: page.category | append: '/' | relative_url }}">{{ cat.label }}</a>{% endif %}</div>
     <h1>{{ page.title }}</h1>
-  <div class="article-meta">{{ page.author | default: "真航線編輯部" }}{% if page.date %} · {{ page.date | date: "%Y/%m/%d" }}{% endif %}</div>
+  {% assign author_info = site.data.authors[page.author] %}
+  <div class="article-meta">{% if author_info %}<a class="author-link" href="{{ '/author/' | append: author_info.slug | append: '/' | relative_url }}">{{ page.author }}</a>{% else %}{{ page.author | default: "真航線編輯部" }}{% endif %}{% if page.date %} · {{ page.date | date: "%Y/%m/%d" }}{% endif %}</div>
   <article class="article-body">{{ content }}</article>
   <a class="backhome" href="{{ '/' | relative_url }}">← 回首頁</a>
 </main>
-<style>mjx-container[display="true"]{display:block;overflow-x:auto;overflow-y:hidden;padding:2px 0}</style>
+<style>mjx-container[display="true"]{display:block;overflow-x:auto;overflow-y:hidden;padding:2px 0}
+.article-meta .author-link{color:var(--dim);text-decoration:underline;text-underline-offset:3px}
+.article-meta .author-link:hover{color:var(--gold)}</style>
 <script>
   MathJax = {
     tex: {
