@@ -1,5 +1,5 @@
 ---
-title: 飛行員的惡夢："棺材角 Coffin Corner"
+title: 飛行員的惡夢：棺材角 Coffin Corner
 section: knowledge          # 大分類：news / knowledge / safety / fanzone
 category: aerodynamics           # 小分類代碼（見下表）
 date: 2026-08-22            # 日期，新的排前面
