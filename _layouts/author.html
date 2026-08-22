@@ -1,0 +1,50 @@
+---
+layout: default
+---
+<main class="page">
+  <div class="crumb"><a href="{{ '/' | relative_url }}">首頁</a> <span>/</span> <span>作者</span> <span>/</span> <span>{{ page.title }}</span></div>
+
+  <div class="author-hero">
+    <div class="author-avatar-wrap">
+      {% if page.avatar and page.avatar != "" %}
+      <img class="author-avatar" src="{{ page.avatar | relative_url }}" alt="{{ page.title }}" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      {% endif %}
+      <div class="author-avatar author-avatar-fallback" {% if page.avatar and page.avatar != "" %}style="display:none"{% endif %}>{{ page.title | slice: 0, 1 }}</div>
+    </div>
+    <div class="author-head">
+      <h1>{{ page.title }}</h1>
+      {% if page.role %}<div class="author-role">{{ page.role }}</div>{% endif %}
+    </div>
+  </div>
+
+  <div class="article-body author-bio">{{ content }}</div>
+
+  {% assign posts = site.articles | where: "author", page.author_name | sort: "date" | reverse %}
+  <h2 class="author-list-title">發表的文章 <span class="author-count">({{ posts | size }})</span></h2>
+  <ul class="author-articles">
+    {% for a in posts %}
+    {% assign sec = site.data.tax.sections[a.section] %}
+    <li>
+      <a href="{{ a.url | relative_url }}">{{ a.title }}</a>
+      <span class="author-article-meta">{% if sec %}{{ sec.label }} · {% endif %}{{ a.date | date: "%Y/%m/%d" }}</span>
+    </li>
+    {% endfor %}
+  </ul>
+
+  <a class="backhome" href="{{ '/' | relative_url }}">← 回首頁</a>
+</main>
+<style>
+  .author-hero{display:flex;align-items:center;gap:22px;margin:0 0 26px;flex-wrap:wrap}
+  .author-avatar{width:104px;height:104px;border-radius:50%;object-fit:cover;border:2px solid var(--line);display:block}
+  .author-avatar-fallback{align-items:center;justify-content:center;display:flex;font-family:var(--font-dsp);font-size:40px;font-weight:900;color:var(--gold);background:linear-gradient(135deg,#13273f,#0b1a2e)}
+  .author-hero h1{margin:0 0 4px}
+  .author-role{font-family:var(--font-mono);font-size:13px;color:var(--gold)}
+  .author-bio{margin-bottom:34px;padding-bottom:8px;border-bottom:1px solid var(--line)}
+  .author-list-title{font-family:var(--font-dsp);font-size:20px;font-weight:900;margin:0 0 14px}
+  .author-count{color:var(--faint);font-family:var(--font-mono);font-size:13px;font-weight:400}
+  .author-articles{list-style:none;margin:0 0 30px;padding:0}
+  .author-articles li{padding:12px 2px;border-bottom:1px solid var(--line)}
+  .author-articles li a{display:block;font-weight:700;line-height:1.5;margin-bottom:2px}
+  .author-articles li a:hover{color:var(--gold)}
+  .author-article-meta{font-family:var(--font-mono);font-size:12px;color:var(--faint)}
+</style>
