@@ -2,7 +2,7 @@
 title: 飛行員的惡夢："棺材角 Coffin Corner"
 section: knowledge          # 大分類：news / knowledge / safety / fanzone
 category: aerodynamics           # 小分類代碼（見下表）
-date: 2026-08-21            # 日期，新的排前面
+date: 2026-08-22            # 日期，新的排前面
 author: "Bill Lin"       # 作者名字，可改成自己的名字或筆名；刪掉這行或留空 "" 會顯示「真航線編輯部」
 thumb: /assets/img/coffinconer.jpg   # 縮圖（可留空 "" ）
 excerpt: "棺材角是高空飛行中速度包線上一個令人不安的區域，當飛機爬得夠高，低速失速的邊界與高速震波抖振的邊界會越靠越近，最後幾乎重疊，只留下一條窄得可怕的可用速度帶。到了極限的那一點，理論上只剩一個速度能維持平飛 —— 再慢一點就低速失速，再快一點就高速抖振，兩邊都通往失控。名字取得直白：一旦踏進去，幾乎沒有安全的出路"
