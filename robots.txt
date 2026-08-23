@@ -2,3 +2,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://www.truecourse.tw/sitemap.xml
+Sitemap: https://www.truecourse.tw/news-sitemap.xml
