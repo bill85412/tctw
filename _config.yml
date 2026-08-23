@@ -17,7 +17,6 @@ logo: /assets/img/logo-dark.png
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
-  - jekyll-feed
 
 # 文章集合：原始檔放在 _articles/<分類>/，網址自動變成 /<分類>/<檔名>/
 collections:
