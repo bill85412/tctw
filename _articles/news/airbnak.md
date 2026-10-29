@@ -43,9 +43,9 @@ image: /assets/img/cpl.jpg   # 分享到社群時的預覽圖，通常填跟 thu
 我先用英文模式把每一科過一輪，確認觀念都還在，再切回中文熟悉考卷上的用語。在國外學過的科目，這樣刷起來很快。
 台灣法規是完全陌生的，我把它排在最前面，每天通勤時刷一點，答錯的題目多刷幾輪。
 
-- CPL 商用駕駛員題庫：https://apps.apple.com/us/app/caa-cpl-%E9%A1%8C%E5%BA%AB/id6821266852
+- CPL 商用駕駛員題庫：[https://apps.apple.com/us/app/caa-cpl-%E9%A1%8C%E5%BA%AB/id6821266852](https://apps.apple.com/us/app/caa-cpl-%E9%A1%8C%E5%BA%AB/id6821266852)
 
-- IR 儀器飛航題庫：https://apps.apple.com/us/app/caa-ir-%E9%A1%8C%E5%BA%AB/id6822698267
+- IR 儀器飛航題庫：[https://apps.apple.com/us/app/caa-ir-%E9%A1%8C%E5%BA%AB/id6822698267](https://apps.apple.com/us/app/caa-ir-%E9%A1%8C%E5%BA%AB/id6822698267)
 
 
 <figure><img src="{{ '/assets/img/cpl.jpg' | relative_url }}"><figcaption>CAA CPL 題庫</figcaption></figure>
